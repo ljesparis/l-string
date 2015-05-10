@@ -83,10 +83,10 @@ console.log(string.rConCat("leonardo esparis meza", "123123"));
 
 console.log(string.lConCat("leonardo esparis meza", "123123"));
 
-console.log(string.replace("leonardo esparis meza", "nardo", "!@#"));
-console.log(string.replace("leonardo esparis meza", "e", "!@#", 1));
-console.log(string.replace("leonardo esparis meza", "e", "!@#", 2));
-console.log(string.replace("leonardo esparis meza", "e", "!@#", 3));
+console.log(string.lreplace("leonardo esparis meza", "nardo", "!@#"));
+console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 1));
+console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 2));
+console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 3));
 
 console.log(string.center("leonardo"));
 console.log(string.center("leonardo", 100));

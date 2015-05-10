@@ -106,13 +106,13 @@ console.log(string.rConCat("leonardo esparis meza", "123123")); // leonardo espa
 <br>
 console.log(string.lConCat("leonardo esparis meza", "123123")); // 123123leonardo esparis meza 
 <br>
-console.log(string.replace("leonardo esparis meza", "nardo", "!@#")); // leo!@# esparis meza 
+console.log(string.lreplace("leonardo esparis meza", "nardo", "!@#")); // leo!@# esparis meza 
 <br>
-console.log(string.replace("leonardo esparis meza", "e", "!@#", 1)); // l!@#onardo esparis meza 
+console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 1)); // l!@#onardo esparis meza 
 <br>
-console.log(string.replace("leonardo esparis meza", "e", "!@#", 2)); // l!@#onardo !@#sparis meza 
+console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 2)); // l!@#onardo !@#sparis meza 
 <br>
-console.log(string.replace("leonardo esparis meza", "e", "!@#", 3)); // l!@#onardo !@#sparis m!@#za
+console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 3)); // l!@#onardo !@#sparis m!@#za
 <br>
 console.log(string.center("leonardo")); // leonardo 
 <br>
