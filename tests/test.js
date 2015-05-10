@@ -43,6 +43,7 @@ console.log(string.rslice("leonardo",0,2)); // this start from o
 
 console.log(string.getSize(154654));
 
+console.log(string.count("leonardo leonardo", "do"));
 console.log(string.count("leonardo", "eo", 0, 2));
 console.log(string.count("leonardo", "eo"));
 console.log(string.count("leonardo", "o"));
