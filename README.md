@@ -1,3 +1,4 @@
+```
 #*Created By Leonardo Esparis*
 #I am an engineering's student
 
@@ -6,7 +7,7 @@
 
 ###Examples:
 
-```
+
 var string = require("../lib/string");
 
 console.log(string.multiply(1, -1) + "leonardo")
