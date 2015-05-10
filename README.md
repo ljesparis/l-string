@@ -52,7 +52,7 @@ console.log(string.isEmpty("1231Asd")); // false
 <br>
 console.log(string.isEmpty("!@asd")); // false
 <br>
-console.log(string.slice("leonardo",0,3)); // this start from l ==> leo 
+console.log(string.lslice("leonardo",0,3)); // this start from l ==> leo 
 <br>
 console.log(string.rslice(154654654,0,1)); // 4
 <br>
@@ -78,9 +78,9 @@ console.log(string.reverse("leonardo")); // odranoel
 <br>
 console.log(string.title("leONArdo esPAris")); // Leonardo Esparis
 <br>
-console.log(string.split("leonardo", "o")) // ["le", "nard"]
+console.log(string.lsplit("leonardo", "o")) // ["le", "nard"]
 <br>
-console.log(string.split("leonardo", "o", 1)) // ["le", "nardo"]
+console.log(string.lsplit("leonardo", "o", 1)) // ["le", "nardo"]
 <br>
 console.log(string.rsplit("leonardo", "o")) // ["le", "nard"]
 <br>
@@ -114,6 +114,14 @@ console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 2)); // l!@#ona
 <br>
 console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 3)); // l!@#onardo !@#sparis m!@#za
 <br>
+console.log(string.rreplace("leonardo esparis meza", "nardo", "!@#")); // leo!@# esparis meza 
+<br>
+console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 1)); // leonardo esparis m!@#za 
+<br>
+console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 2)); // leonardo !@#sparis m!@#za 
+<br>
+console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 3)); // l!@#onardo !@#sparis m!@#za
+<br>
 console.log(string.center("leonardo")); // leonardo 
 <br>
 console.log(string.center("leonardo", 100)); //                         leonardo 
@@ -132,6 +140,6 @@ console.log(string.escape("<>\'\"")); //  <!-- &lt;&amp;&#39;&quot; -->
 <br>
 console.log(string.slugify("leonardo esparis")); // l-e-o-n-a-r-d-o-e-s-p-a-r-i-s
 <br>
-console.log(string.dummyAddTag("leonardo esparis", "html")); // <!--<html>leonardo esparis</html> -->
+console.log(string.dummyAddTag("leonardo esparis", "html")); // <!-- <html_tag> leonardo esparis </html_tag> -->
 <br>
 console.log(string.dummyRemoveTag(string.dummyAddTag("leonardo esparis", "html"), "html")); // leonardo esparis

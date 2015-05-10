@@ -3,7 +3,7 @@
 
 var string = require("../lib/string");
 
-
+/*
 console.log(string.multiply("*", 5))
 
 console.log(string.isUpper("leonardo"))
@@ -36,7 +36,7 @@ console.log(string.isEmpty("1231Asd"));
 console.log(string.isEmpty("!@asd"));
 
 
-console.log(string.slice("leonardo",0,3)); // this start from l 
+console.log(string.lslice("leonardo",0,3)); // this start from l 
 
 console.log(string.rslice(154654654,0,1));
 console.log(string.rslice("leonardo",0,2)); // this start from o 
@@ -44,6 +44,7 @@ console.log(string.rslice("leonardo",0,2)); // this start from o
 console.log(string.getSize(154654));
 
 console.log(string.count("leonardo leonardo", "do"));
+console.log(string.count("leonardo leonardo", "do", 0 , 8));
 console.log(string.count("leonardo", "eo", 0, 2));
 console.log(string.count("leonardo", "eo"));
 console.log(string.count("leonardo", "o"));
@@ -61,8 +62,8 @@ console.log(string.reverse("leonardo"));
 
 console.log(string.title("leONArdo esPAris"));
 
-console.log(string.split("leonardo", "o"))
-console.log(string.split("leonardo", "o", 1))
+console.log(string.lsplit("leonardo", "o"))
+console.log(string.lsplit("leonardo", "o", 1))
 
 console.log(string.rsplit("leonardo", "o"))
 console.log(string.rsplit("leonardo", "o", 1))
@@ -89,6 +90,12 @@ console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 1));
 console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 2));
 console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 3));
 
+console.log(string.rreplace("leonardo", "o", "123", 1));
+console.log(string.rreplace("leonardo", "o", "123"));
+console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 1));
+console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 2));
+console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 3));
+
 console.log(string.center("leonardo"));
 console.log(string.center("leonardo", 100));
 
@@ -107,11 +114,6 @@ console.log(string.dummyAddTag("leonardo esparis", "html"));
 
 console.log(string.dummyRemoveTag(string.dummyAddTag("leonardo esparis", "html"), "html"));
 console.log(string.dummyRemoveTag("<p>leonardo esparis was here</p>"));
-
-
-
-
-
-
+*/
 
 
