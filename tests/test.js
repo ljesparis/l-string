@@ -44,6 +44,8 @@ console.log(string.rslice("leonardo",0,2)); // this start from o
 console.log(string.getSize(154654));
 
 console.log(string.count("leonardo", "eo", 0, 2));
+console.log(string.count("leonardo", "eo"));
+console.log(string.count("leonardo", "o"));
 
 console.log(string.getUpper("leonardo"));
 
@@ -52,6 +54,7 @@ console.log(string.getLower("ESPARIS"));
 console.log(string.capitalize("Leonardo Esparis"));
 
 console.log(string.getCharPosition("Leonardo Esparis", "i"));
+console.log(string.getCharPosition("Leonardo Esparis", "o"));
 
 console.log(string.reverse("leonardo"));
 
