@@ -62,20 +62,20 @@ console.log(string.rslice("leonardo",0,2));// do
 
 console.log(string.getSize(154654)); // 6 
 
-console.log("1 ==> " + string.count("leonardo leonardo", "do"));           // 1 ==> 2
-console.log("2 ==> " + string.count("leonardo leonardo", "do", 4));        // 2 ==> 2
-console.log("3 ==> " + string.count("leonardo leonardo", "do", "as"));     // 3 ==> 0
-console.log("4 ==> " + string.count("leonardo leonardo", "do", "as", 8));  // 4 ==> 0 
-console.log("5 ==> " + string.count("leonardo leonardo", "do", 0 , 8));    // 5 ==> 1 
-console.log("6 ==> " + string.count("leonardo", "eo", 0, 2));              // 6 ==> 1 
-console.log("7 ==> " + string.count("leonardo", "eo"));                    // 7 ==> 1 
-console.log("8 ==> " + string.count("leonardo", "o"));                     // 8 ==> 2 
-console.log("9 ==> " + string.count("leonardo", "o", 3));                  // 9 ==> 1 
-console.log("10 ==> " + string.count("leonardo", "o", 2, "a"));            // 10 ==> 0 
-console.log("11 ==> " + string.count("leonardo", "o", "A", 1));            // 11 ==> 0 
-console.log("12 ==> " + string.count("leonardo", "o", "A", "a"));          // 12 ==> 0 
-console.log("13 ==> " + string.count("leonardo"));                         // 13 ==> 0 
-console.log("14 ==> " + string.count());                                   // 14 ==> 0 
+console.log("1 ==> " + string.dummyCount("leonardo leonardo", "do"));           // 1 ==> 2
+console.log("2 ==> " + string.dummyCount("leonardo leonardo", "do", 4));        // 2 ==> 2
+console.log("3 ==> " + string.dummyCount("leonardo leonardo", "do", "as"));     // 3 ==> 0
+console.log("4 ==> " + string.dummyCount("leonardo leonardo", "do", "as", 8));  // 4 ==> 0 
+console.log("5 ==> " + string.dummyCount("leonardo leonardo", "do", 0 , 8));    // 5 ==> 1 
+console.log("6 ==> " + string.dummyCount("leonardo", "eo", 0, 2));              // 6 ==> 1 
+console.log("7 ==> " + string.dummyCount("leonardo", "eo"));                    // 7 ==> 1 
+console.log("8 ==> " + string.dummyCount("leonardo", "o"));                     // 8 ==> 2 
+console.log("9 ==> " + string.dummyCount("leonardo", "o", 3));                  // 9 ==> 1 
+console.log("10 ==> " + string.dummyCount("leonardo", "o", 2, "a"));            // 10 ==> 0 
+console.log("11 ==> " + string.dummyCount("leonardo", "o", "A", 1));            // 11 ==> 0 
+console.log("12 ==> " + string.dummyCount("leonardo", "o", "A", "a"));          // 12 ==> 0 
+console.log("13 ==> " + string.dummyCount("leonardo"));                         // 13 ==> 0 
+console.log("14 ==> " + string.dummyCount());                                   // 14 ==> 0 
 
 console.log(string.getUpper("leonardo")); // LEONARDO 
 console.log(string.getUpper());           //
