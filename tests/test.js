@@ -3,7 +3,7 @@
 
 var string = require("../lib/string");
 
-/*
+
 console.log(string.multiply(1, -1) + "leonardo")
 console.log(string.multiply(1, 5) + "leonardo")
 console.log(string.multiply() + "leonardo")
@@ -55,20 +55,20 @@ console.log(string.rslice("leonardo",0,2));
 
 console.log(string.getSize(154654));
 
-console.log("1 ==> " + string.count("leonardo leonardo", "do"));
-console.log("2 ==> " + string.count("leonardo leonardo", "do", 4));
-console.log("3 ==> " + string.count("leonardo leonardo", "do", "as"));
-console.log("4 ==> " + string.count("leonardo leonardo", "do", "as", 8));
-console.log("5 ==> " + string.count("leonardo leonardo", "do", 0 , 8));
-console.log("6 ==> " + string.count("leonardo", "eo", 0, 2));
-console.log("7 ==> " + string.count("leonardo", "eo"));
-console.log("8 ==> " + string.count("leonardo", "o"));
-console.log("9 ==> " + string.count("leonardo", "o", 3));
-console.log("10 ==> " + string.count("leonardo", "o", 2, "a"));
-console.log("11 ==> " + string.count("leonardo", "o", "A", 1));
-console.log("12 ==> " + string.count("leonardo", "o", "A", "a"));
-console.log("13 ==> " + string.count("leonardo"));
-console.log("14 ==> " + string.count());
+console.log("1 ==> " + string.dummyCount("leonardo leonardo", "do"));
+console.log("2 ==> " + string.dummyCount("leonardo leonardo", "do", 4));
+console.log("3 ==> " + string.dummyCount("leonardo leonardo", "do", "as"));
+console.log("4 ==> " + string.dummyCount("leonardo leonardo", "do", "as", 8));
+console.log("5 ==> " + string.dummyCount("leonardo leonardo", "do", 0 , 8));
+console.log("6 ==> " + string.dummyCount("leonardo", "eo", 0, 2));
+console.log("7 ==> " + string.dummyCount("leonardo", "eo"));
+console.log("8 ==> " + string.dummyCount("leonardo", "o"));
+console.log("9 ==> " + string.dummyCount("leonardo", "o", 3));
+console.log("10 ==> " + string.dummyCount("leonardo", "o", 2, "a"));
+console.log("11 ==> " + string.dummyCount("leonardo", "o", "A", 1));
+console.log("12 ==> " + string.dummyCount("leonardo", "o", "A", "a"));
+console.log("13 ==> " + string.dummyCount("leonardo"));
+console.log("14 ==> " + string.dummyCount());
 
 console.log(string.getUpper("leonardo"));
 console.log(string.getUpper());
@@ -93,10 +93,12 @@ console.log(string.title());
 console.log(string.lsplit("leonardo", "o"))
 console.log(string.lsplit("leonardo", "o", 1))
 console.log(string.lsplit("leonardo", 1))
-console.log(string.lsplit("leonardo", 112))
+console.log(string.lsplit("leonardo", 1, 1))
 
 console.log(string.rsplit("leonardo", 1))
 console.log(string.rsplit("leonardo", "o", 1))
+console.log(string.rsplit("leonardo leonardo", "eo" ))
+console.log(string.rsplit("leonardo leonardo", "eo", 1))
 
 console.log(string.isSubString("leonardo", "nar"));
 console.log(string.isSubString("leonardo", "te"));
@@ -170,5 +172,5 @@ console.log(string.dummyAddTag("leonardo esparis", "html"));
 console.log(string.dummyRemoveTag(string.dummyAddTag("leonardo esparis", "html"), "html"));
 console.log(string.dummyRemoveTag("<p>leonardo esparis was here</p>"));
 console.log(string.dummyRemoveTag("<h1>leonardo esparis was here</h1>"));
-console.log(string.dummyRemoveTag("<1>leonardo esparis was here</1>"));*/
+console.log(string.dummyRemoveTag("<1>leonardo esparis was here</1>"));
 
