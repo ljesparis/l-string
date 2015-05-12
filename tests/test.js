@@ -3,10 +3,10 @@
 
 var string = require("../lib/string");
 
-
+/*
+console.log(string.multiply() + "leonardo")
 console.log(string.multiply(1, -1) + "leonardo")
 console.log(string.multiply(1, 5) + "leonardo")
-console.log(string.multiply() + "leonardo")
 
 console.log(string.isUpper())
 console.log(string.isUpper("leonardo"))
@@ -55,6 +55,7 @@ console.log(string.rslice("leonardo",0,2));
 
 console.log(string.getSize(154654));
 
+console.log("0 ==> " + string.dummyCount("leonardo", "onar", 0, 5));
 console.log("1 ==> " + string.dummyCount("leonardo leonardo", "do"));
 console.log("2 ==> " + string.dummyCount("leonardo leonardo", "do", 4));
 console.log("3 ==> " + string.dummyCount("leonardo leonardo", "do", "as"));
@@ -77,6 +78,7 @@ console.log(string.getLower("ESPARIS"));
 console.log(string.getLower());
 
 console.log(string.capitalize("Leonardo Esparis"));
+console.log(string.capitalize("lEONARDO ESPARIS MEZA"));
 console.log(string.capitalize());
 
 console.log(string.getCharPosition("Leonardo Esparis", "i"));
@@ -85,6 +87,7 @@ console.log(string.getCharPosition("Leonardo Esparis"));
 console.log(string.getCharPosition());
 
 console.log(string.reverse("leonardo"));
+console.log(string.reverse("leonardo javier esparis meza"));
 console.log(string.reverse());
 
 console.log(string.title("leONArdo esPAris"));
@@ -118,6 +121,7 @@ console.log(string.endsWith());
 console.log(string.swapCase("leonardo ESPARIS MeZa"));
 console.log(string.swapCase());
 
+console.log(string.trim("           Real                     Madrid               "));
 console.log(string.trim("leonardo esparis meza"));
 console.log(string.trim("leonardo"));
 console.log(string.trim());
@@ -133,10 +137,13 @@ console.log(string.lConCat("leonardo esparis meza", "123123"));
 console.log(string.lreplace());
 console.log(string.lreplace("leonardo"));
 console.log(string.lreplace("leonardo", "o"));
+console.log(string.lreplace("leonardo", "o"));
+console.log(string.rreplace("lASDeASDoASD", "ASD", ""));
 console.log(string.lreplace("leonardo esparis meza", "nardo", "!@#"));
 console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 1));
 console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 2));
 console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 3));
+console.log(string.rreplace("leonardo!@#@$%^&!@#@$%^&Esparis!@#@$%^&meza!@#@$%^&", "!@#@$%^&", ""));
 
 console.log(string.rreplace());
 console.log(string.rreplace("leonardo"));
@@ -145,7 +152,11 @@ console.log(string.rreplace("leonardo", "o", "123", 1));
 console.log(string.rreplace("leonardo", "o", "123"));
 console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 1));
 console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 2));
-console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 3));
+
+console.log(string.join("-", [1,2,3]))  
+console.log(string.join("##", [1,2,3])) 
+console.log(string.join("ASD", [1,2,3]))
+console.log(string.join("!!!!", [1,2,3,4,5,6,7,8,9,10,11,12,13,14]))
 
 console.log("hi" + string.center("leonardo") + "hi");
 console.log("hi" + string.center("leonardo", 10) + "hi");
@@ -168,9 +179,14 @@ console.log(string.slugify(""));
 console.log(string.slugify());
 
 console.log(string.dummyAddTag("leonardo esparis", "html"));
+console.log(string.dummyAddTag(
+								string.dummyAddTag(
+													string.dummyAddTag("leonardo esparis", "p"), 
+													"body"), 
+								"html")); 
 
 console.log(string.dummyRemoveTag(string.dummyAddTag("leonardo esparis", "html"), "html"));
 console.log(string.dummyRemoveTag("<p>leonardo esparis was here</p>"));
 console.log(string.dummyRemoveTag("<h1>leonardo esparis was here</h1>"));
 console.log(string.dummyRemoveTag("<1>leonardo esparis was here</1>"));
-
+*/

@@ -154,6 +154,10 @@ console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 1));   // leona
 console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 2));   // leonardo !@#sparis m!@#za
 console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 3));   // l!@#onardo !@#sparis m!@#za
 
+console.log(string.join("-", [1,2,3]))   // 1-2-3 
+console.log(string.join("##", [1,2,3]))  // 1##2##3
+console.log(string.join("ASD", [1,2,3])) // 1ASD2ASD3
+
 console.log("hi" + string.center("leonardo") + "hi");    // hileonardohi 
 console.log("hi" + string.center("leonardo", 10) + "hi");// hi              leonardo                hi  
 console.log("hi" + string.center() + "hi");              //hihi      
