@@ -1,6 +1,6 @@
 {
   "name": "l-string",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "this is a module that you can use to manipulate strings",
   "main": "./lib/string.js",
   "directories": {

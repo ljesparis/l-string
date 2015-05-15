@@ -1,4 +1,3 @@
-
 #*Created By Leonardo Esparis*
 #I am an engineering's student
 
@@ -46,19 +45,19 @@ console.log(string.isEmpty("1231Asd")); // false
 console.log(string.isEmpty("!@asd")); // false 
 
 
-console.log(string.lslice("leonardo",0,3)); // leo 
-console.log(string.lslice("leonardo", 1));  // eonardo 
-console.log(string.lslice("leonardo"));  // leonardo 
-console.log(string.lslice());  //  
+console.log(string.lSlice("leonardo",0,3)); // leo 
+console.log(string.lSlice("leonardo", 1));  // eonardo 
+console.log(string.lSlice("leonardo"));  // leonardo 
+console.log(string.lSlice());  //  
 
-console.log(string.rslice());  //
-console.log(string.rslice(987654321));     // 987654321
-console.log(string.rslice(987654321,1));   // 98765432
-console.log(string.rslice(987654321,2));   // 9876543
-console.log(string.rslice(987654321,3));   // 987654
-console.log(string.rslice(987654321,"4")); // 98765
-console.log(string.rslice(987654321,0,1)); // 1 
-console.log(string.rslice("leonardo",0,2));// do 
+console.log(string.rSlice());  //
+console.log(string.rSlice(987654321));     // 987654321
+console.log(string.rSlice(987654321,1));   // 98765432
+console.log(string.rSlice(987654321,2));   // 9876543
+console.log(string.rSlice(987654321,3));   // 987654
+console.log(string.rSlice(987654321,"4")); // 98765
+console.log(string.rSlice(987654321,0,1)); // 1 
+console.log(string.rSlice("leonardo",0,2));// do 
 
 console.log(string.getSize(154654)); // 6 
 
@@ -97,15 +96,15 @@ console.log(string.reverse());            //
 console.log(string.title("leONArdo esPAris")); // Leonardo Esparis 
 console.log(string.title());                   //
 
-console.log(string.lsplit("leonardo", "o"))     // ['le' , 'nard']
-console.log(string.lsplit("leonardo", "o", 1))  // ['le' , 'nardo']
-console.log(string.lsplit("leonardo", 1))       // ['leonardo']
-console.log(string.lsplit("leonardo", 112))     // ['leonardo']
+console.log(string.lSplit("leonardo", "o"))     // ['le' , 'nard']
+console.log(string.lSplit("leonardo", "o", 1))  // ['le' , 'nardo']
+console.log(string.lSplit("leonardo", 1))       // ['leonardo']
+console.log(string.lSplit("leonardo", 112))     // ['leonardo']
 
-console.log(string.rsplit("leonardo", 1))                // ['leonardo']
-console.log(string.rsplit("leonardo", "o", 1))           // ['leonard']
-console.log(string.rsplit("leonardo leonardo", "eo"))    // [ 'l', 'nardo l', 'nardo' ]
-console.log(string.rsplit("leonardo leonardo", "eo", 1)) // [ 'leonardo l', 'nardo' ]
+console.log(string.rSplit("leonardo", 1))                // ['leonardo']
+console.log(string.rSplit("leonardo", "o", 1))           // ['leonard']
+console.log(string.rSplit("leonardo leonardo", "eo"))    // [ 'l', 'nardo l', 'nardo' ]
+console.log(string.rSplit("leonardo leonardo", "eo", 1)) // [ 'leonardo l', 'nardo' ]
 
 console.log(string.isSubString("leonardo", "nar")); // true 
 console.log(string.isSubString("leonardo", "te"));  // false 
@@ -137,22 +136,22 @@ console.log(string.lConCat());                                  //
 console.log(string.lConCat("leonardo esparis meza"));           // leonardo esparis meza 
 console.log(string.lConCat("leonardo esparis meza", "123123")); // 123123leonardo esparis meza 
 
-console.log(string.lreplace());                                         //
-console.log(string.lreplace("leonardo"));                               // leonardo 
-console.log(string.lreplace("leonardo", "o"));                          // lenard 
-console.log(string.lreplace("leonardo esparis meza", "nardo", "!@#"));  // leo!@# esparis meza 
-console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 1));   // l!@#onardo esparis meza 
-console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 2));   // l!@#onardo !@#sparis meza
-console.log(string.lreplace("leonardo esparis meza", "e", "!@#", 3));   // l!@#onardo !@#sparis m!@#za 
+console.log(string.lReplace());                                         //
+console.log(string.lReplace("leonardo"));                               // leonardo 
+console.log(string.lReplace("leonardo", "o"));                          // lenard 
+console.log(string.lReplace("leonardo esparis meza", "nardo", "!@#"));  // leo!@# esparis meza 
+console.log(string.lReplace("leonardo esparis meza", "e", "!@#", 1));   // l!@#onardo esparis meza 
+console.log(string.lReplace("leonardo esparis meza", "e", "!@#", 2));   // l!@#onardo !@#sparis meza
+console.log(string.lReplace("leonardo esparis meza", "e", "!@#", 3));   // l!@#onardo !@#sparis m!@#za 
 
-console.log(string.rreplace());                                         //
-console.log(string.rreplace("leonardo"));                               // leonardo  
-console.log(string.rreplace("leonardo", "o"));                          // lenard
-console.log(string.rreplace("leonardo", "o", "123"));                   // lenard 
-console.log(string.rreplace("leonardo", "o", "123", 1));                // leonard123 
-console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 1));   // leonardo esparis m!@#za
-console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 2));   // leonardo !@#sparis m!@#za
-console.log(string.rreplace("leonardo esparis meza", "e", "!@#", 3));   // l!@#onardo !@#sparis m!@#za
+console.log(string.rReplace());                                         //
+console.log(string.rReplace("leonardo"));                               // leonardo  
+console.log(string.rReplace("leonardo", "o"));                          // lenard
+console.log(string.rReplace("leonardo", "o", "123"));                   // lenard 
+console.log(string.rReplace("leonardo", "o", "123", 1));                // leonard123 
+console.log(string.rReplace("leonardo esparis meza", "e", "!@#", 1));   // leonardo esparis m!@#za
+console.log(string.rReplace("leonardo esparis meza", "e", "!@#", 2));   // leonardo !@#sparis m!@#za
+console.log(string.rReplace("leonardo esparis meza", "e", "!@#", 3));   // l!@#onardo !@#sparis m!@#za
 
 console.log(string.join("-", [1,2,3]))   // 1-2-3 
 console.log(string.join("##", [1,2,3]))  // 1##2##3
@@ -162,13 +161,13 @@ console.log("hi" + string.center("leonardo") + "hi");    // hileonardohi
 console.log("hi" + string.center("leonardo", 10) + "hi");// hi              leonardo                hi  
 console.log("hi" + string.center() + "hi");              //hihi      
 
-console.log("hi" + string.ljust("leonardo"));       // hileonardo     
-console.log("hi" + string.ljust("leonardo", 10));   // hi          leonardo 
-console.log("hi" + string.ljust());                 // hi 
+console.log("hi" + string.lJust("leonardo"));       // hileonardo     
+console.log("hi" + string.lJust("leonardo", 10));   // hi          leonardo 
+console.log("hi" + string.lJust());                 // hi 
 
-console.log(string.rjust("leonardo") + "hi");       // leonardohi 
-console.log(string.rjust("leonardo", 5) + "hi");    // leonardo          hi 
-console.log(string.rjust() + "hi");                 //hi
+console.log(string.rJust("leonardo") + "hi");       // leonardohi 
+console.log(string.rJust("leonardo", 5) + "hi");    // leonardo          hi 
+console.log(string.rJust() + "hi");                 //hi
 
 console.log(string.escape("leonardo\' has become bigger & ..")); // leonardo&#39; has become bigger &gt; ...
 console.log(string.escape("<>\'\""));                            // &lt;&amp;&quot;&#39;
