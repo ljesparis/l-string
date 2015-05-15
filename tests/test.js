@@ -190,11 +190,22 @@ console.log(string.dummyRemoveTag(string.dummyAddTag("leonardo esparis", "html")
 console.log(string.dummyRemoveTag("<p>leonardo esparis was here</p>"));
 console.log(string.dummyRemoveTag("<h1>leonardo esparis was here</h1>"));
 console.log(string.dummyRemoveTag("<1>leonardo esparis was here</1>"));
-*/
 
-/*
-console.log(string.smartCount("leonardo", "o", "1", "3"))
-console.log(string.smartCount("leonardo", "o", 1, "8"))
-console.log(string.smartCount("leonardo", "o", "1", 8))
-console.log(string.smartCount("leonardo", "o", "4", 8))
-console.log(string.smartCount("leonardo", "o"))*/
+console.log(string.delete("leonardo", "o"))
+console.log(string.delete("leonardo", "onar"))
+
+console.log(string.insert("leonardo", "o", 0))
+console.log(string.insert("leonardo", "o", 1))
+console.log(string.insert("leonardo", "o", 2))
+console.log(string.insert("leonardo", "o", 3))
+console.log(string.insert("leonardo", "o", 4))
+console.log(string.insert("leonardo", "o", 5))
+console.log(string.insert("leonardo", "o", 6))
+console.log(string.insert("leonardo", "o", 7))
+console.log(string.insert("leonardo", "o"))
+console.log(string.insert("leonardo", "o", 8))
+
+
+console.log(string.toCharArray("leonardo javier esparis meza {'name':'leonardo'}"))
+
+*/

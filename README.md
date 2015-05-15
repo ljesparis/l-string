@@ -183,4 +183,26 @@ console.log(string.dummyRemoveTag(string.dummyAddTag("leonardo esparis", "html")
 console.log(string.dummyRemoveTag("<p>leonardo</p>"));          // leonardo  
 console.log(string.dummyRemoveTag("<h1>leonardo</h1>"));        // leonardo 
 console.log(string.dummyRemoveTag("<1>leonardo</1>"));          // leonardo
+
+
+console.log(string.delete("leonardo", "onar")) // ledo
+console.log(string.delete("leonardo", "o"))    // lenard 
+
+
+console.log(string.insert("leonardo", "o", 0)) // oleonardo
+console.log(string.insert("leonardo", "o", 1)) // loeonardo 
+console.log(string.insert("leonardo", "o", 2)) // leoonardo
+console.log(string.insert("leonardo", "o", 3)) // leoonardo
+console.log(string.insert("leonardo", "o", 4)) // leonoardo
+console.log(string.insert("leonardo", "o", 5)) // leonaordo
+console.log(string.insert("leonardo", "o", 6)) // leonarodo
+console.log(string.insert("leonardo", "o", 7)) // leonardoo
+console.log(string.insert("leonardo", "o"))    // leonardoo
+console.log(string.insert("leonardo", "o", 8)) // leonardoo
+
+
+console.log(string.toCharArray("leonardo javier esparis meza {'name':'leonardo'}"))
+// [ 'l', 'e', 'o', 'n', 'a', 'r', 'd', 'o', ' ', 'j', 'a', 'v','i', 'e', 'r', ' ', 'e', 's', 'p', 'a', 'r', 'i', 's', ' ', 'm', 'e', 'z', 'a', ' ', '{', '\'', 'n', 'a', 'm', 'e', '\'', ':', '\'', 'l', 'e', 'o', 'n', 'a', 'r', 'd', 'o', '\'', '}' ]
+
+
 ```
