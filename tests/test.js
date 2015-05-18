@@ -186,10 +186,11 @@ console.log(string.dummyAddTag(
 													"body"), 
 								"html")); 
 
-console.log(string.dummyRemoveTag(string.dummyAddTag("leonardo esparis", "html"), "html"));
-console.log(string.dummyRemoveTag("<p>leonardo esparis was here</p>"));
-console.log(string.dummyRemoveTag("<h1>leonardo esparis was here</h1>"));
-console.log(string.dummyRemoveTag("<1>leonardo esparis was here</1>"));
+console.log(string.removeTag(string.dummyAddTag("leonardo esparis", "html"), "html"));
+console.log(string.removeTag("<p>leonardo esparis was here</p>"));
+console.log(string.removeTag("<h1>leonardo esparis was here</h1>"));
+console.log(string.removeTag("<1>leonardo esparis was here</1>"));
+console.log(string.removeTag(string.smartAddTag("leonardo", ["DOCTYPE html", "head", "body", "div", "div", "img"])));
 
 console.log(string.delete("leonardo", "o"))
 console.log(string.delete("leonardo", "onar"))
@@ -205,7 +206,8 @@ console.log(string.insert("leonardo", "o", 7))
 console.log(string.insert("leonardo", "o"))
 console.log(string.insert("leonardo", "o", 8))
 
-
 console.log(string.toCharArray("leonardo javier esparis meza {'name':'leonardo'}"))
 
+console.log(string.smartAddTag("leonardo", ["body", "header", "p"]))
+console.log(string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "img"]))
 */
