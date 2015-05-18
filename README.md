@@ -205,4 +205,7 @@ console.log(string.toCharArray("leonardo javier esparis meza {'name':'leonardo'}
 // [ 'l', 'e', 'o', 'n', 'a', 'r', 'd', 'o', ' ', 'j', 'a', 'v','i', 'e', 'r', ' ', 'e', 's', 'p', 'a', 'r', 'i', 's', ' ', 'm', 'e', 'z', 'a', ' ', '{', '\'', 'n', 'a', 'm', 'e', '\'', ':', '\'', 'l', 'e', 'o', 'n', 'a', 'r', 'd', 'o', '\'', '}' ]
 
 
+console.log(string.smartAddTag("leonardo", ["body", "header", "p"])) // <body><header><p>leonardo</p></header></body>
+console.log(string.smartAddTag("leonardo", ["div", "div", "p"])) // <div><div><p></p></div></div>
+
 ```
