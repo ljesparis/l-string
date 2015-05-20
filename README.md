@@ -4,6 +4,9 @@
 ##if you use this module, report bugs
 ##it's a good practice for me...
 
+##Install
+```npm install l-string or npm install --save l-string or npm install -g l-string```
+
 ###Examples:
 
 ```
