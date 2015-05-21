@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 //here are some usefull test
 
-var string = require("../l-string")
+var string = require("../l-string"),
 	multiply = string.multiply,
 	isUpper = string.isUpper,
 	isLower = string.isLower,
@@ -338,7 +338,7 @@ console.log("leonardo".getUpper());
 console.log("ESPARIS".getLower());
 console.log("Leonardo Esparis".capitalize());
 console.log("Leonardo Esparis".getCharPosition("e"));
-console.log(reverse("leonardo"));
+console.log("leonardo".reverse());
 console.log("leonardo javier esparis meza".reverse());
 console.log("leONArdo esPAris".title());
 console.log("leonardo esparis".lSplit("e",1))
@@ -366,6 +366,6 @@ console.log("leonardo".smartAddTag(["body", "header", "p"]))
 var x = "leonardo".smartAddTag(["DOCTYPE","html", "div", "div", "div", "div", "img"]);
 console.log(x.add2TagClassName("something", "html"));
 console.log(x.add2TagClassName("a", "div"))
-console.log(x.add2TagIdName("a", "div2"))*/
+console.log(x.add2TagIdName("a", "div2"))
 var x = "leonardo".smartAddTag(["DOCTYPE","html", "div", "div", "div", "div", "img"]);
-console.log(x.add2TagIdName("a", "img"))
+console.log(x.add2TagIdName("a", "img"))*/
