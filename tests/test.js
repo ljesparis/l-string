@@ -46,7 +46,7 @@ var string = require("../l-string")
 	add2TagClassName = string.add2TagClassName,
 	add2TagIdName = string.add2TagIdName;
 
-
+/*
 console.log(string.multiply() + "leonardo")
 console.log(multiply(1, -1) + "leonardo")
 console.log(string.multiply(1, 5) + "leonardo")
@@ -358,13 +358,14 @@ console.log("hi" + "leonardo".lJust(10));
 console.log("leonardo".rJust(5) + "hi");
 console.log("leonardo\' has become bigger & ..<>\'\"".escape());
 console.log("leonardo esparis".slugify());
-console.log("leonardo esparis".dummyAddTag("html"));
 console.log("<1>leonardo esparis was here</1>".removeTag());
 console.log("leonardo".remove("o"))
 console.log("leonardo".insert("o", 0))
 console.log("leonardo javier esparis meza {'name':'leonardo'}".toCharArray())
 console.log("leonardo".smartAddTag(["body", "header", "p"]))
-
 var x = "leonardo".smartAddTag(["DOCTYPE","html", "div", "div", "div", "div", "img"]);
+console.log(x.add2TagClassName("something", "html"));
 console.log(x.add2TagClassName("a", "div"))
-console.log(x.add2TagIdName("a", "div2"))
+console.log(x.add2TagIdName("a", "div2"))*/
+var x = "leonardo".smartAddTag(["DOCTYPE","html", "div", "div", "div", "div", "img"]);
+console.log(x.add2TagIdName("a", "img"))
