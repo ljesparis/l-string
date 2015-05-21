@@ -1,6 +1,6 @@
 {
   "name": "l-string",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "this is a module that you can use to manipulate strings",
   "main": "l-string.js",
   "directories": {
@@ -28,5 +28,6 @@
   ],
   "scripts": {
     "test-legacy": "node ./tests/test.js"
-  }
+  },
+  "license": "MIT"
 }
