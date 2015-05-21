@@ -1,21 +1,30 @@
 {
   "name": "l-string",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "this is a module that you can use to manipulate strings",
-  "main": "./lib/string.js",
+  "main": "l-string.js",
   "directories": {
     "test": "tests"
   },
   "engines": {
     "node": ">=0.10.0"
   },
+  "bugs": {
+    "url": "https://github.com/leoxnidas/l-string/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/leoxnidas/l-string"
   },
-  "author": "Leonardo Javier Esparis Meza <leo.leo.leoxnidas.c.14@gmail.com>",
+  "author": {
+    "name": "Leonardo Javier Esparis Meza",
+    "email": "leo.leo.leoxnidas.c.14@gmail.com"
+  },
   "files": [
-    "lib"
+    "lib/",
+    "README.md",
+    "tests/",
+    "l-string.js"
   ],
   "scripts": {
     "test-legacy": "node ./tests/test.js"
