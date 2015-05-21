@@ -10,7 +10,7 @@
 ###Examples:
 
 ```
-var string = require("../lib/string"),
+var string = require("../l-string")
 	multiply = string.multiply,
 	isUpper = string.isUpper,
 	isLower = string.isLower,
@@ -54,7 +54,10 @@ var string = require("../lib/string"),
 	smartAddTag = string.smartAddTag,
 	add2TagClassName = string.add2TagClassName,
 	add2TagIdName = string.add2TagIdName;
+```
+#first way to use this module
 
+```
 console.log(multiply(1, -1) + "leonardo") // 1leonardo
 console.log(string.multiply(1, 5) + "leonardo") //  11111leonardo
 console.log(string.multiply() + "leonardo") // leonardo 
@@ -333,4 +336,56 @@ console.log(string.add2TagIdName(
 console.log(string.add2TagIdName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
 	, "a", "div5")) // <!DOCTYPE html><html><div><div><div><div><img>leonardo</div></div></div></div></html>
+```
+
+#second way to use this module.
+
+```
+console.log("leonardo".multiply(2))
+console.log("leonardo".isUpper())
+console.log("leonardo".isLower())
+console.log("leonardo".isAlpha())
+console.log("leonardo".isDigit())
+console.log("leonardo".isAlphanumeric())
+console.log("leonardo".isSpace())
+console.log("leonardo".isEmpty());
+console.log("leonardo".lSlice(0,3));  
+console.log("leonardo".rSlice(0,3));
+console.log("leonardo".getSize());
+console.log("leonardo".dummyCount("onar", 0, 5));
+console.log("leonardo".getUpper());
+console.log("ESPARIS".getLower());
+console.log("Leonardo Esparis".capitalize());
+console.log("Leonardo Esparis".getCharPosition("e"));
+console.log(reverse("leonardo"));
+console.log("leonardo javier esparis meza".reverse());
+console.log("leONArdo esPAris".title());
+console.log("leonardo esparis".lSplit("e",1))
+console.log("leonardo leonardo".rSplit("eo", 1))
+console.log("leonardo".isSubString("nar"));
+console.log("leonardo".startsWith("leo"));
+console.log("leonardo".endsWith("do"));
+console.log("leonardo ESPARIS MeZa".swapCase());
+console.log("           Real                     Madrid               ".trim());
+console.log("leonardo esparis meza".rConCat("123123"));
+console.log("leonardo esparis meza".lConCat("123123"));
+console.log("leonardo esparis meza".lReplace("e", "!@#",1));
+console.log("leonardo esparis meza".rReplace("e", "!@#", 2));
+console.log("-".join([1,2,3])) 
+console.log("hi" + "leonardo".center(10) + "hi");
+console.log("hi" + "leonardo".lJust(10));
+console.log("leonardo".rJust(5) + "hi");
+console.log("leonardo\' has become bigger & ..<>\'\"".escape());
+console.log("leonardo esparis".slugify());
+console.log("leonardo esparis".dummyAddTag("html"));
+console.log("<1>leonardo esparis was here</1>".removeTag());
+console.log("leonardo".remove("o"))
+console.log("leonardo".insert("o", 0))
+console.log("leonardo javier esparis meza {'name':'leonardo'}".toCharArray())
+console.log("leonardo".smartAddTag(["body", "header", "p"]))
+
+var x = "leonardo".smartAddTag(["DOCTYPE","html", "div", "div", "div", "div", "img"]);
+console.log(x.add2TagClassName("a", "div"))
+console.log(x.add2TagIdName("a", "div2"))
+
 ```
