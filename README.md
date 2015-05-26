@@ -5,7 +5,7 @@
 ##it's a good practice for me...
 
 ##Install
-```npm install l-string or npm install --save l-string or npm install -g l-string```
+```npm install l-string or npm install --save l-string ```
 
 ###Examples:
 
@@ -19,12 +19,8 @@ var string = require("../l-string")
 	isAlphanumeric = string.isAlphanumeric,
 	isEmpty = string.isEmpty,
 	isSpace = string.isSpace,
-	lSlice = string.lSlice,
 	rSlice = string.rSlice,
-	getSize = string.getSize,
 	dummyCount = string.dummyCount,
-	getUpper = string.getUpper,
-	getLower = string.getLower,
 	capitalize = string.capitalize,
 	getCharPosition = string.getCharPosition,
 	reverse = string.reverse,
@@ -81,15 +77,12 @@ console.log(string.isEmpty("1231Asd")); // false
 console.log(string.isEmpty("!@asd")); // false 
 
  
-console.log(string.lSlice("leonardo"));  // leonardo 
-console.log(string.lSlice());  //  
 
 console.log(string.rSlice(987654321,3));   // 987654
 console.log(string.rSlice(987654321,"4")); // 98765
 console.log(string.rSlice(987654321,0,1)); // 1 
 console.log(string.rSlice("leonardo",0,2));// do 
 
-console.log(string.getSize(154654)); // 6 
 
 console.log("8 ==> " + string.dummyCount("leonardo", "o"));                     // 8 ==> 2 
 console.log("9 ==> " + string.dummyCount("leonardo", "o", 3));                  // 9 ==> 1 
@@ -99,11 +92,7 @@ console.log("12 ==> " + string.dummyCount("leonardo", "o", "A", "a"));          
 console.log("13 ==> " + string.dummyCount("leonardo"));                         // 13 ==> 0 
 console.log("14 ==> " + string.dummyCount());                                   // 14 ==> 0 
  
-console.log(string.getUpper("leonardo")); // LEONARDO 
-console.log(string.getUpper());           //
   
-console.log(string.getLower("ESPARIS"));  // leonardo 
-console.log(string.getLower());           // 
  
 console.log(string.capitalize("Leonardo Esparis")); // Leonardo esparis 
 console.log(string.capitalize());                   // 
@@ -242,13 +231,10 @@ console.log(isSpace("asd")) // false
 console.log(isSpace("123")) // false 
 console.log(isEmpty("  ")); // true  
 console.log(isEmpty("asd")); // false
-console.log(lSlice("leonardo",0,3)); // leo 
-console.log(lSlice("leonardo", 1));  // eonardo
 console.log(rSlice());  //
 console.log(rSlice(987654321));     // 987654321
 console.log(rSlice(987654321,1));   // 98765432
 console.log(rSlice(987654321,2));   // 9876543
-console.log(getSize(154654)); // 6 
 console.log("1 ==> " + dummyCount("leonardo leonardo", "do"));           // 1 ==> 2
 console.log("2 ==> " + dummyCount("leonardo leonardo", "do", 4));        // 2 ==> 2
 console.log("3 ==> " + dummyCount("leonardo leonardo", "do", "as"));     // 3 ==> 0
@@ -256,8 +242,6 @@ console.log("4 ==> " + dummyCount("leonardo leonardo", "do", "as", 8));  // 4 ==
 console.log("5 ==> " + dummyCount("leonardo leonardo", "do", 0 , 8));    // 5 ==> 1 
 console.log("6 ==> " + dummyCount("leonardo", "eo", 0, 2));              // 6 ==> 1 
 console.log("7 ==> " + dummyCount("leonardo", "eo"));                    // 7 ==> 1 
-console.log(getUpper("leonardo")); // LEONARDO
-console.log(getLower("ESPARIS"));  // leonardo
 console.log(capitalize("Leonardo Esparis")); // Leonardo esparis
 console.log(getCharPosition("Leonardo Esparis", "i")); // [14]
 console.log(getCharPosition("Leonardo Esparis"));      // []
@@ -353,15 +337,11 @@ console.log("leonardo".isDigit())
 console.log("leonardo".isAlphanumeric())
 console.log("leonardo".isSpace())
 console.log("leonardo".isEmpty());
-console.log("leonardo".lSlice(0,3));  
 console.log("leonardo".rSlice(0,3));
-console.log("leonardo".getSize());
 console.log("leonardo".dummyCount("onar", 0, 5));
-console.log("leonardo".getUpper());
-console.log("ESPARIS".getLower());
 console.log("Leonardo Esparis".capitalize());
 console.log("Leonardo Esparis".getCharPosition("e"));
-console.log(reverse("leonardo"));
+console.log("leonardo".reverse());
 console.log("leonardo javier esparis meza".reverse());
 console.log("leONArdo esPAris".title());
 console.log("leonardo esparis".lSplit("e",1))
