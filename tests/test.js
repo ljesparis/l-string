@@ -306,21 +306,6 @@ console.log(string.add2TagIdName(
 
 
 
-console.log("leonardo".multiply(2))
-console.log("leonardo".isUpper())
-console.log("leonardo".isLower())
-console.log("leonardo".isAlpha())
-console.log("leonardo".isDigit())
-console.log("leonardo".isAlphanumeric())
-console.log("leonardo".isSpace())
-console.log("leonardo".isEmpty());
-console.log("leonardo".rSlice(0,3));
-console.log("Leonardo Esparis".capitalize());
-console.log("Leonardo Esparis".getCharPosition("e"));
-console.log("leonardo".reverse());
-console.log("leonardo javier esparis meza".reverse());
-console.log("leONArdo esPAris".title());
-console.log("leonardo leonardo".rSplit("eo", 1))
 console.log("leonardo".startsWith("leo"));
 console.log("leonardo".endsWith("do"));
 console.log("leonardo ESPARIS MeZa".swapCase());
@@ -351,3 +336,21 @@ console.log("leonardo esparis meza".lSplit("e",1))
 console.log("leonardo esparis meza".lSplit("e",2))
 console.log("leonardo esparis meza".lSplit("e",3))
 console.log("leonardo".isSubString("nar"));
+
+console.log("leonardo".dummyCount('o', 1, 4))
+console.log("leonardo".multiply(2))
+console.log("leonardo".isUpper())
+console.log("leonardo".isLower())
+console.log("leonardo".isAlpha())
+console.log("leonardo".isDigit())
+console.log("leonardo".isAlphanumeric())
+console.log("leonardo".isSpace())
+console.log("leonardo".isEmpty());
+console.log("leonardo".rSlice(0,3));
+console.log("Leonardo Esparis".capitalize());
+console.log("Leonardo esparis".getCharPosition("e"));
+console.log("leonardo".reverse());
+console.log("leonardo javier esparis meza".reverse());
+console.log("leONArdo esPAris".title());
+console.log("leonardo leonardo".rSplit("eo", 1))
+console.log("leonardo leonardo".lSplit("eo", 1))
