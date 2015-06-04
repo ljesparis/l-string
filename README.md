@@ -372,4 +372,7 @@ var x = "leonardo".smartAddTag(["DOCTYPE","html", "div", "div", "div", "div", "i
 console.log(x.add2TagClassName("a", "div"))
 console.log(x.add2TagIdName("a", "div2"))
 
+
+console.log("<p>leonardo</p>".add2TagStyle("p", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
+console.log("leonardo".smartAddTag(['div','div']).add2TagStyle('div1', ['color', 'red']))
 ```
