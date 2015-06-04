@@ -40,9 +40,10 @@ var string = require("../l-string"),
 	toCharArray = string.toCharArray,
 	smartAddTag = string.smartAddTag,
 	add2TagClassName = string.add2TagClassName,
-	add2TagIdName = string.add2TagIdName;
+	add2TagIdName = string.add2TagIdName,
+	add2TagStyle = string.add2TagStyle;
 
-
+/*
 console.log(string.multiply() + "leonardo")
 console.log(multiply(1, -1) + "leonardo")
 console.log(string.multiply(1, 5) + "leonardo")
@@ -354,3 +355,13 @@ console.log("leonardo javier esparis meza".reverse());
 console.log("leONArdo esPAris".title());
 console.log("leonardo leonardo".rSplit("eo", 1))
 console.log("leonardo leonardo".lSplit("eo", 1))
+console.log("leonardo".dummyCount('leonardo'))
+var a = "leonardo javier esparis meza";
+console.log(a.rSlice((a.length - 1), a.length))
+console.log(a.rSlice((a.length - 1), a.length + 1))
+console.log(a.rSlice((a.length - 1), a.length + 2))
+console.log(a.rSlice((a.length - 1), a.length + 3))
+console.log(a.rSlice((a.length - 1), a.length + 4))
+
+console.log("<p>leonardo</p>".add2TagStyle("p", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
+console.log("leonardo".smartAddTag(['div','div']).add2TagStyle('div1', ['color', 'red']))*/
