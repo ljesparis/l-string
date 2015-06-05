@@ -1,16 +1,22 @@
-#*Created By Leonardo Esparis*
-#I am an engineering's student
+**Created By Leonardo Esparis**
+===============================
+I am an engineering's student
+-----------------------------
 
-##if you use this module, report bugs
-##it's a good practice for me...
+if you use this module, report bugs
+-----------------------------------
+it's a good practice for me...
+--------------------------------
 
 ```if you want to more examples, go to tests folder.```
 
 
-##Install
+Install
+-------
 ```npm install l-string or npm install --save l-string ```
 
-###Examples:
+Examples:
+---------
 
 ```
 var string = require("../l-string"),
@@ -55,8 +61,8 @@ var string = require("../l-string"),
 	add2TagIdName = string.add2TagIdName,
 	add2TagStyle = string.add2TagStyle;
 ```
-#first way to use this module
-
+first way to use this module
+----------------------------
 ```
 console.log(string.multiply(1, 5) + "leonardo") //  11111leonardo
 console.log(string.multiply() + "leonardo") // leonardo 
@@ -242,7 +248,8 @@ console.log(string.add2TagStyle(
 	, "div5", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))// <!DOCTYPE html><html><div><div><div><div><img>leonardo</div></div></div></div></html>
 ```
 
-#second way to use this module.
+second way to use this module.
+------------------------------
 
 ```
 console.log(multiply(1, -1) + "leonardo") // 1leonardo
@@ -353,7 +360,8 @@ console.log(add2TagIdName(
 	, "a", "div3"))// <!DOCTYPE html><html><div><div><div id='a'><div><img>leonardo</div></div></div></div></html>
 ```
 
-#thirth way to use this module.
+thirth way to use this module.
+------------------------------
 
 ```
 console.log("leonardo".multiply(2))
