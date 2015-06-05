@@ -43,7 +43,8 @@ var string = require("../l-string"),
 	add2TagIdName = string.add2TagIdName,
 	add2TagStyle = string.add2TagStyle;
 
-/*
+
+
 console.log(string.multiply() + "leonardo")
 console.log(multiply(1, -1) + "leonardo")
 console.log(string.multiply(1, 5) + "leonardo")
@@ -127,6 +128,12 @@ console.log(lSplit("leonardo", "o"))
 console.log(lSplit("leonardo", "o", 1))
 console.log(string.lSplit("leonardo esparis", "e"))
 console.log(string.lSplit("leonardo esparis", "e", 1))
+console.log(string.lSplit("leonardo leonardo", "eo"))
+console.log(string.lSplit("leonardo leonardo", "eo", 1))
+console.log(string.lSplit("leonardo leonardo", "eon"))
+console.log(string.lSplit("leonardo leonardo", "eon", 1))
+console.log(string.lSplit("leonardo leonardo", "eona"))
+console.log(string.lSplit("leonardo leonardo", "eona", 1))
 console.log(string.lSplit("leonardo", 1))
 console.log(string.lSplit("leonardo", 1, 1))
 
@@ -134,6 +141,16 @@ console.log(rSplit("leonardo", "o"))
 console.log(rSplit("leonardo", "o", 1))
 console.log(string.rSplit("leonardo leonardo", "eo" ))
 console.log(string.rSplit("leonardo leonardo", "eo", 1))
+console.log(string.rSplit("leonardo leonardo", "eon"))
+console.log(string.rSplit("leonardo leonardo", "eon", 1))
+console.log(string.rSplit("leonardo leonardo", "eona"))
+console.log(string.rSplit("leonardo leonardo", "eona", 1))
+console.log(string.rSplit("leonardo leonardo", "eonar"))
+console.log(string.rSplit("leonardo leonardo", "eonar", 1))
+console.log(string.rSplit("leonardo leonardo", "eonard"))
+console.log(string.rSplit("leonardo leonardo", "eonard", 1))
+console.log(string.rSplit("leonardo leonardo", "eonardo"))
+console.log(string.rSplit("leonardo leonardo", "eonardo", 1))
 
 console.log(isSubString("leonardo", "nar"));
 console.log(string.isSubString("leonardo", "te"));
@@ -173,7 +190,7 @@ console.log(lReplace());
 console.log(lReplace("leonardo"));
 console.log(lReplace("leonardo", "o"));
 console.log(lReplace("leonardo", "o"));
-console.log(rReplace("lASDeASDoASD", "ASD", ""));
+console.log(lReplace("lASDeASDoASD", "ASD", ""));
 console.log(string.lReplace("leonardo esparis meza", "nardo", "!@#"));
 console.log(string.lReplace("leonardo esparis meza", "e", "!@#", 1));
 console.log(string.lReplace("leonardo esparis meza", "e", "!@#", 2));
@@ -182,11 +199,13 @@ console.log(string.lReplace("leonardo esparis meza", "e", "!@#", 3));
 console.log(rReplace());
 console.log(rReplace("leonardo"));
 console.log(rReplace("leonardo", "o"));
-console.log(rReplace("leonardo", "o", "123", 1));
+console.log(rReplace("leonardo", "o", "", 1));
 console.log(string.rReplace("leonardo", "o", "123"));
 console.log(string.rReplace("leonardo esparis meza", "e", "!@#", 1));
 console.log(string.rReplace("leonardo esparis meza", "e", "!@#", 2));
-console.log(string.rReplace("leonardo!@#@$%^&!@#@$%^&Esparis!@#@$%^&meza!@#@$%^&", "!@#@$%^&", ""));
+console.log(string.rReplace("leonardo esparis meza", "e", "!@#"));
+console.log(string.rReplace("leonardo!@#@$%^&!@#@$%^&Esparis!@#@$%^&meza!@#@$%^&", "!@#@$%^&", " "));
+console.log(string.rReplace("leonardo!@#@$%^&!@#@$%^&!@#@$%^&!@#@$%^&Esparis!@#@$%^&!@#@$%^&!@#@$%^&!@#@$%^&!@#@$%^&meza!@#@$%^&", "!@#@$%^&", " "));
 
 console.log(join("-", "leonardo"))  
 console.log(join("-", [1,2,3]))  
@@ -247,7 +266,6 @@ console.log(toCharArray("leonardo javier esparis meza {'name':'leonardo'}"))
 console.log(smartAddTag("leonardo", ["body", "header", "p"]))
 console.log(string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "img"]))
 
-
 console.log(string.add2TagClassName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
 	, "a", "div"))
@@ -267,6 +285,7 @@ console.log(string.add2TagClassName(
 console.log(string.add2TagClassName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
 	, "a", "div5"))
+
 console.log(add2TagClassName("<img>leo", "image", "img1"))
 console.log(add2TagClassName("<img>leo", "image", "img2"))
 console.log(add2TagClassName("<img>leo", "image", "img"))
@@ -300,15 +319,36 @@ console.log(add2TagIdName(
 console.log(string.add2TagIdName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
 	, "a", "4div"))
-
+console.log(string.add2TagIdName(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "a", "div4"))
 console.log(string.add2TagIdName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
 	, "a", "div5"))
 
+console.log(string.add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
+console.log(add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div1", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
+console.log(add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div2", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
+console.log(add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div3", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
+console.log(string.add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "4div", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
+console.log(string.add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div4", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
 
+console.log(string.add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div5", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
 
-console.log("leonardo".startsWith("leo"));
-console.log("leonardo".endsWith("do"));
 console.log("leonardo ESPARIS MeZa".swapCase());
 console.log("           Real                     Madrid               ".trim());
 console.log("leonardo esparis meza".rConCat("123123"));
@@ -316,6 +356,8 @@ console.log("leonardo esparis meza".lConCat("123123"));
 console.log("leonardo esparis meza".lReplace("e", "!@#",1));
 console.log("leonardo esparis meza".rReplace("e", "!@#", 2));
 console.log("-".join([1,2,3])) 
+console.log("leonardo".startsWith("leo"));
+console.log("leonardo".endsWith("do"));
 console.log("hi" + "leonardo".center(10) + "hi");
 console.log("hi" + "leonardo".lJust(10));
 console.log("leonardo".rJust(5) + "hi");
@@ -337,7 +379,7 @@ console.log("leonardo esparis meza".lSplit("e",1))
 console.log("leonardo esparis meza".lSplit("e",2))
 console.log("leonardo esparis meza".lSplit("e",3))
 console.log("leonardo".isSubString("nar"));
-
+ 
 console.log("leonardo".dummyCount('o', 1, 4))
 console.log("leonardo".multiply(2))
 console.log("leonardo".isUpper())
@@ -363,5 +405,54 @@ console.log(a.rSlice((a.length - 1), a.length + 2))
 console.log(a.rSlice((a.length - 1), a.length + 3))
 console.log(a.rSlice((a.length - 1), a.length + 4))
 
+
+console.log("leonardo".smartAddTag(['div','div']).add2TagStyle('div', ['color', 'red']))
+console.log("leonardo\' has become bigger & ..<>\'\"".escape());
+console.log("leonardo esparis".slugify());
+console.log("<1>leonardo esparis was here</1>".removeTag());
+console.log("leonardo".remove("o"))
+console.log("leonardo".insert("o", 1))
+console.log("leonardo javier esparis meza {'name':'leonardo'}".toCharArray())
+console.log("leonardo".smartAddTag(["body", "header", "p"]))
+var x = "leonardo".smartAddTag(["DOCTYPE","html", "div", "div", "div", "div", "img"]);
+console.log(x.add2TagClassName("something", "html"));
+console.log(x.add2TagClassName("a", "div"))
+console.log(x.add2TagIdName("a", "div2"))
+console.log(x.add2TagIdName("a", "div3"))
+console.log(x.add2TagIdName("a", "div4"))
+console.log(x.add2TagIdName("a", "div5"))
+var x = "leonardo".smartAddTag(["DOCTYPE","html", "div", "div", "div", "div", "img"]);
+console.log(x.add2TagIdName("a", "img"))
+console.log("leonardo leonardo leonardo leonardo".dummyCount("onar"));
+console.log("leonardo esparis meza".lSplit("e",1))
+console.log("leonardo esparis meza".lSplit("e",2))
+console.log("leonardo esparis meza".lSplit("e",3))
+console.log("leonardo".isSubString("nar"));
+ 
+console.log("leonardo".dummyCount('o', 1, 4))
+console.log("leonardo".multiply(2))
+console.log("leonardo".isUpper())
+console.log("leonardo".isLower())
+console.log("leonardo".isAlpha())
+console.log("leonardo".isDigit())
+console.log("leonardo".isAlphanumeric())
+console.log("leonardo".isSpace())
+console.log("leonardo".isEmpty());
+console.log("leonardo".rSlice(0,3));
+console.log("Leonardo Esparis".capitalize());
+console.log("Leonardo esparis".getCharPosition("e"));
+console.log("leonardo".reverse());
+console.log("leonardo javier esparis meza".reverse());
+console.log("leONArdo esPAris".title());
+console.log("leonardo leonardo".rSplit("eo", 1))
+console.log("leonardo leonardo".lSplit("eo", 1))
+console.log("leonardo".dummyCount('leonardo'))
+var a = "leonardo javier esparis meza";
+console.log(a.rSlice((a.length - 1), a.length))
+console.log(a.rSlice((a.length - 1), a.length + 1))
+console.log(a.rSlice((a.length - 1), a.length + 2))
+console.log(a.rSlice((a.length - 1), a.length + 3))
+console.log(a.rSlice((a.length - 1), a.length + 4))
+console.log("leonardo leonardo leonardo leonardo".lReplace("e", "!@#", 1))
 console.log("<p>leonardo</p>".add2TagStyle("p", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
-console.log("leonardo".smartAddTag(['div','div']).add2TagStyle('div1', ['color', 'red']))*/
+console.log("<p>leonardo</p>".add2TagStyle("p2", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))

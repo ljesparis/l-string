@@ -1,16 +1,19 @@
-#*Created By Leonardo Esparis*
+```#*Created By Leonardo Esparis*
 #I am an engineering's student
 
 ##if you use this module, report bugs
 ##it's a good practice for me...
 
-##Install
+if you want to more examples, go to tests folder
+```
+
+```##Install```
 ```npm install l-string or npm install --save l-string ```
 
-###Examples:
+```###Examples:```
 
 ```
-var string = require("../l-string")
+var string = require("../l-string"),
 	multiply = string.multiply,
 	isUpper = string.isUpper,
 	isLower = string.isLower,
@@ -49,9 +52,10 @@ var string = require("../l-string")
 	toCharArray = string.toCharArray,
 	smartAddTag = string.smartAddTag,
 	add2TagClassName = string.add2TagClassName,
-	add2TagIdName = string.add2TagIdName;
+	add2TagIdName = string.add2TagIdName,
+	add2TagStyle = string.add2TagStyle;
 ```
-#first way to use this module
+```#first way to use this module```
 
 ```
 console.log(string.multiply(1, 5) + "leonardo") //  11111leonardo
@@ -213,9 +217,32 @@ console.log(string.add2TagIdName(
 console.log(string.add2TagIdName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
 	, "a", "div5")) // <!DOCTYPE html><html><div><div><div><div><img>leonardo</div></div></div></div></html>
+
+console.log(string.add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div", [['margin',['10dp',0,'10dp', 0]], ['color','red']])) // <!DOCTYPE html><html><div style='margin: 10dp 0 10dp 0; color:red; '><div><div><div><img>leonardo</div></div></div></div></html>
+console.log(add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div1", [['margin',['10dp',0,'10dp', 0]], ['color','red']])) // <!DOCTYPE html><html><div style='margin: 10dp 0 10dp 0; colof:red; '><div><div><div><img>leonardo</div></div></div></div></html>
+console.log(add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div2", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))// <!DOCTYPE html><html><div><div style='margin: 10dp 0 10dp 0; colof:red;'><div><div><img>leonardo</div></div></div></div></html>
+console.log(add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div3", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))// <!DOCTYPE html><html><div><div><div style='margin: 10dp 0 10dp 0; colof:red; '><div><img>leonardo</div></div></div></div></html>
+console.log(string.add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "4div", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))// <!DOCTYPE html><html><div><div><div><div style='margin: 10dp 0 10dp 0; colof:red; '><img>leonardo</div></div></div></div></html>
+console.log(string.add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div4", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))// <!DOCTYPE html><html><div><div><div><div style='margin: 10dp 0 10dp 0; colof:red; '><img>leonardo</div></div></div></div></html>
+
+console.log(string.add2TagStyle(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div5", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))// <!DOCTYPE html><html><div><div><div><div><img>leonardo</div></div></div></div></html>
 ```
 
-#second way to use this module.
+```#second way to use this module.```
 
 ```
 console.log(multiply(1, -1) + "leonardo") // 1leonardo
@@ -326,7 +353,7 @@ console.log(add2TagIdName(
 	, "a", "div3"))// <!DOCTYPE html><html><div><div><div id='a'><div><img>leonardo</div></div></div></div></html>
 ```
 
-#thirth way to use this module.
+```#thirth way to use this module.```
 
 ```
 console.log("leonardo".multiply(2))
