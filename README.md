@@ -1,6 +1,6 @@
-**_Created By Leonardo Esparis_**
+**Created By Leonardo Esparis**
 =================================
-**_I am an engineering's student_**
+**I am an engineering's student**
 -----------------------------------
 
 if you use this module, report bugs
@@ -8,8 +8,8 @@ if you use this module, report bugs
 it's a good practice for me...
 --------------------------------
 
-```if you want to more examples, go to tests folder.```
-
+if you want to more examples, go to tests folder.
+-------------------------------------------------
 
 Install
 -------
@@ -410,4 +410,39 @@ console.log(x.add2TagIdName("a", "div2"))
 
 console.log("<p>leonardo</p>".add2TagStyle("p", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
 console.log("leonardo".smartAddTag(['div','div']).add2TagStyle('div1', ['color', 'red']))
+
+var a = "<p>leonardo</p>".add2TagStyle("p1", [ ['color','red'], 
+											   ['background', 'red'], 
+											   ['margin', 
+											    ["10dp", "0", "10dp", "0"]]])
+
+var b = a.add2TagStyle('p', ['right', '0']).add2TagStyle('p1', ['left', '0'])
+var c = b.add2TagStyle('p1', ['text-align', 'center']).add2TagStyle('p1', ['padding', [0,0,0,0]])
+var d = c.add2TagStyle('p1',[['padding',['10dp',0,'10dp', 0]], ['color','red']]
+console.log(d)
+
+var a = "leonardo".smartAddTag(['a', 'a', 'a', 'a', 'a']);
+var data = a.add2TagStyle("a", [['margin',['10dp',0,'10dp', 0]], ['color','red']])
+var data2 = data.add2TagStyle("a", [['right',0], ['background','red']])
+console.log(data2.add2TagStyle("a", [['padding',['10dp',0,'10dp', 0]], ['color','red']]))
+
+console.log("<p>leonardo</p>".add2TagStyle("p1", [['margin', '0 0 0 0'], ['padding', ['0dp', 0, '0dp', 0]]]))
+
+console.log("<p>leonardo</p>".add2TagStyle("p1", ['color', 'red', ['background', 'red']]))
+
+console.log("<p>leonardo</p>".add2TagStyle("p1", [['color', 'red'], ['background', 'red']]))
+
+console.log("<p>leonardo</p>".add2TagStyle("p1", [['color', 'red']]))
+
+var a = "leonardo".smartAddTag(['div ', 'div', 'div', 'div', 'div']).add2TagIdName("div", "something")
+var b = a.add2TagClassName("div1", "something2")
+console.log(b.add2TagStyle("div", [ ['margin', ['10dp',0,'10dp', 0] ], ['color','red'] ]))
+
+var a = "<p>leo</p>".add2TagClassName("p1", "asd")
+var b = a.add2TagClassName("p1", "asdad")
+var c = b.add2TagClassName("p1", "qwe")
+console.log(c.add2TagClassName("p", "something2"))
+
+console.log("<img>leo".add2TagClassName("img1", ["asd", "asdad", "qwe"]))
+console.log("<img>leo".add2TagClassName("img1", ["asd"]))
 ```
