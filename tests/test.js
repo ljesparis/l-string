@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 //here are some usefull test
-
+ 
 var string = require("../l-string"),
 	multiply = string.multiply,
 	isUpper = string.isUpper,
@@ -42,7 +42,6 @@ var string = require("../l-string"),
 	add2TagClassName = string.add2TagClassName,
 	add2TagIdName = string.add2TagIdName,
 	add2TagStyle = string.add2TagStyle;
-
 
 
 console.log(string.multiply() + "leonardo")
@@ -266,65 +265,66 @@ console.log(toCharArray("leonardo javier esparis meza {'name':'leonardo'}"))
 console.log(smartAddTag("leonardo", ["body", "header", "p"]))
 console.log(string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "img"]))
 
-console.log(string.add2TagClassName(
+console.log(string.add2TagIdName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div"))
-console.log(add2TagClassName(
+	, "div", "a"))
+console.log(string.add2TagIdName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div1"))
-console.log(add2TagClassName(
+	, "div1", "a"))
+console.log(string.add2TagIdName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div2"))
-console.log(add2TagClassName(
+	, "div2", "a"))
+console.log(string.add2TagIdName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div3"))
-console.log(string.add2TagClassName(
+	, "div3", "a"))
+console.log(string.add2TagIdName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "4div"))
+	, "4div", "a"))
+console.log(string.add2TagIdName(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div4", "a"))
+console.log(string.add2TagIdName(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div5", "a"))
 
 console.log(string.add2TagClassName(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div5"))
+	, "div", "a"))
+console.log(string.add2TagClassName(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div1", "a"))
+console.log(string.add2TagClassName(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div2", "a"))
+console.log(string.add2TagClassName(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div3", "a"))
+console.log(string.add2TagClassName(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div4", "a"))
+console.log(string.add2TagClassName(
+	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
+	, "div5", "a"))
 
-console.log(add2TagClassName("<img>leo", "image", "img1"))
-console.log(add2TagClassName("<img>leo", "image", "img2"))
-console.log(add2TagClassName("<img>leo", "image", "img"))
-console.log(add2TagClassName("<p>leo</p>", "image", "p"))
-console.log(add2TagClassName("<p>leo</p>", "image", "p1"))
-console.log(string.add2TagClassName("<p>leo</p>", "image", "p2"))
-console.log(string.add2TagClassName("<p>leo</p>", "image", "p3"))
-console.log(string.add2TagClassName("<p>leo</p>", "image", "p4"))
+console.log(add2TagClassName("<img>leo", "img1", "image"))
+console.log(add2TagClassName("<img>leo", "img2", "image"))
+console.log(add2TagClassName("<img>leo", "img", "image"))
+console.log(add2TagClassName("<p>leo</p>", "p", "image"))
+console.log(add2TagClassName("<p>leo</p>", "p1", "image"))
+console.log(string.add2TagClassName("<p>leo</p>", "p2", "image"))
+console.log(string.add2TagClassName("<p>leo</p>", "p3", "image"))
+console.log(string.add2TagClassName("<p>leo</p>", "p4", "image"))
 
-console.log(add2TagIdName("<img>leo", "image", "img1"))
-console.log(add2TagIdName("<img>leo", "image", "img2"))
-console.log(add2TagIdName("<img>leo", "image", "img"))
-console.log(add2TagIdName("<p>leo</p>", "image", "p"))
-console.log(add2TagIdName("<p>leo</p>", "image", "p1"))
-console.log(string.add2TagIdName("<p>leo</p>", "image", "p2"))
-console.log(string.add2TagIdName("<p>leo</p>", "image", "p3"))
-console.log(string.add2TagIdName("<p>leo</p>", "image", "p4"))
+console.log(add2TagIdName("<img>leo", "img1", "image"))
+console.log(add2TagIdName("<img>leo", "img2", "image"))
+console.log(add2TagIdName("<img>leo", "img", "image"))
+console.log(add2TagIdName("<p>leo</p>", "p", "image"))
+console.log(add2TagIdName("<p>leo</p>", "p1", "image"))
+console.log(string.add2TagIdName("<p>leo</p>", "p2", "image"))
+console.log(string.add2TagIdName("<p>leo</p>", "p3", "image"))
+console.log(string.add2TagIdName("<p>leo</p>", "p4", "image"))
 
-console.log(string.add2TagIdName(
-	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div"))
-console.log(add2TagIdName(
-	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div1"))
-console.log(add2TagIdName(
-	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div2"))
-console.log(add2TagIdName(
-	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div3"))
-console.log(string.add2TagIdName(
-	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "4div"))
-console.log(string.add2TagIdName(
-	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div4"))
-console.log(string.add2TagIdName(
-	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div5"))
+
 
 console.log(string.add2TagStyle(
 	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
@@ -415,14 +415,14 @@ console.log("leonardo".insert("o", 1))
 console.log("leonardo javier esparis meza {'name':'leonardo'}".toCharArray())
 console.log("leonardo".smartAddTag(["body", "header", "p"]))
 var x = "leonardo".smartAddTag(["DOCTYPE","html", "div", "div", "div", "div", "img"]);
-console.log(x.add2TagClassName("something", "html"));
-console.log(x.add2TagClassName("a", "div"))
-console.log(x.add2TagIdName("a", "div2"))
-console.log(x.add2TagIdName("a", "div3"))
-console.log(x.add2TagIdName("a", "div4"))
-console.log(x.add2TagIdName("a", "div5"))
+console.log(x.add2TagClassName("html", "something"));
+console.log(x.add2TagClassName("div", "a"))
+console.log(x.add2TagIdName("div2", "a"))
+console.log(x.add2TagIdName("div3", "a"))
+console.log(x.add2TagIdName("div4", "a"))
+console.log(x.add2TagIdName("div5", "a"))
 var x = "leonardo".smartAddTag(["DOCTYPE","html", "div", "div", "div", "div", "img"]);
-console.log(x.add2TagIdName("a", "img"))
+console.log(x.add2TagIdName("img", "a"))
 console.log("leonardo leonardo leonardo leonardo".dummyCount("onar"));
 console.log("leonardo esparis meza".lSplit("e",1))
 console.log("leonardo esparis meza".lSplit("e",2))
@@ -454,5 +454,48 @@ console.log(a.rSlice((a.length - 1), a.length + 2))
 console.log(a.rSlice((a.length - 1), a.length + 3))
 console.log(a.rSlice((a.length - 1), a.length + 4))
 console.log("leonardo leonardo leonardo leonardo".lReplace("e", "!@#", 1))
-console.log("<p>leonardo</p>".add2TagStyle("p", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
-console.log("<p>leonardo</p>".add2TagStyle("p2", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))
+
+var a = "<p>leonardo</p>".add2TagStyle("p1", [ ['color','red'], 
+											   ['background', 'red'], 
+											   ['margin', 
+											    ["10dp", "0", "10dp", "0"]]])
+
+var b = a.add2TagStyle('p', ['right', '0']).add2TagStyle('p1', ['left', '0'])
+var c = b.add2TagStyle('p1', ['text-align', 'center']).add2TagStyle('p1', ['padding', [0,0,0,0]])
+var d = c.add2TagStyle('p1',[['padding',['10dp',0,'10dp', 0]], ['color','red']])
+console.log(d)
+
+var a = "leonardo".smartAddTag(['a', 'a', 'a', 'a', 'a']);
+var data = a.add2TagStyle("a", [['margin',['10dp',0,'10dp', 0]], ['color','red']])
+var data2 = data.add2TagStyle("a", [['right',0], ['background','red']])
+console.log(data2.add2TagStyle("a", [['padding',['10dp',0,'10dp', 0]], ['color','red']]))
+
+console.log("<p>leonardo</p>".add2TagStyle("p1", [['margin', '0 0 0 0'], ['padding', ['0dp', 0, '0dp', 0]]]))
+
+console.log("<p>leonardo</p>".add2TagStyle("p1", ['color', 'red', ['background', 'red']]))
+
+console.log("<p>leonardo</p>".add2TagStyle("p1", [['color', 'red'], ['background', 'red']]))
+
+console.log("<p>leonardo</p>".add2TagStyle("p1", [['color', 'red']]))
+
+var a = "leonardo".smartAddTag(['div', 'div', 'div', 'div', 'div']).add2TagIdName("div", "something")
+var b = a.add2TagClassName("div1", "something2")
+var d = b.add2TagStyle("div", [ ['margin', ['10dp',0,'10dp', 0] ], ['color','red'] ])
+console.log(d.add2TagIdName('div', ['something2', 'something3']))
+
+var a = "<p>leo</p>".add2TagClassName("p1", "leonardo")
+var b = a.add2TagClassName("p1", "javier")
+var c = b.add2TagClassName("p1", "esparis")
+console.log(c.add2TagClassName("p", "meza"))
+
+console.log("<img>leo".add2TagClassName("1img", ["asd", "asdad", "qwe"]))
+console.log("<img>leo".add2TagClassName("img1", ["asd"]))
+
+var a = "<p>leo</p>".add2TagClassName("p", "leonardo")
+var b = a.add2TagStyle("p", [ ['margin', ['10dp',0,'10dp', 0] ], ['color','red'] ])
+var c = b.add2TagClassName("p", "javier")
+var d = c.add2TagIdName("p1", "esparis")
+var e = d.add2TagIdName("p1", "meza")
+console.log(e.add2TagStyle("p", [['margin', '0 0 0 0']]).add2TagClassName("p", "veronica"))
+
+console.log("<p>leonardo</p>".add2TagIdName("p1", "leonardo").add2TagIdName("p1", "esparis"))
