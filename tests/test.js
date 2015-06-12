@@ -43,7 +43,7 @@ var string = require("../l-string"),
 	add2TagIdName = string.add2TagIdName,
 	add2TagStyle = string.add2TagStyle;
 
-
+/*
 console.log(string.multiply() + "leonardo")
 console.log(multiply(1, -1) + "leonardo")
 console.log(string.multiply(1, 5) + "leonardo")
@@ -499,3 +499,6 @@ var e = d.add2TagIdName("p1", "meza")
 console.log(e.add2TagStyle("p", [['margin', '0 0 0 0']]).add2TagClassName("p", "veronica"))
 
 console.log("<p>leonardo</p>".add2TagIdName("p1", "leonardo").add2TagIdName("p1", "esparis"))
+*/
+
+console.log("leonardo".insert("$", 0))
