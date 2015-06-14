@@ -41,7 +41,8 @@ var string = require("../l-string"),
 	smartAddTag = string.smartAddTag,
 	add2TagClassName = string.add2TagClassName,
 	add2TagIdName = string.add2TagIdName,
-	add2TagStyle = string.add2TagStyle;
+	add2TagStyle = string.add2TagStyle,
+	add2TagAttr = string.add2TagAttr;
 
 /*
 console.log(string.multiply() + "leonardo")
@@ -499,6 +500,14 @@ var e = d.add2TagIdName("p1", "meza")
 console.log(e.add2TagStyle("p", [['margin', '0 0 0 0']]).add2TagClassName("p", "veronica"))
 
 console.log("<p>leonardo</p>".add2TagIdName("p1", "leonardo").add2TagIdName("p1", "esparis"))
-*/
 
-console.log("leonardo".insert("$", 0))
+var a = "<p>leonardo</p>".add2TagAttr("p", "data-city", "city")
+var b = a.add2TagAttr("p", "data-city2", "")
+var c = b.add2TagClassName("p", "javier")
+var d = c.add2TagIdName("p1", "esparis")
+var e = d.add2TagIdName("p1", "meza")
+var d = e.add2TagAttr("p", "data-city2")
+console.log(d.add2TagAttr("p", "data-city3"))
+
+console.log("<a>leo</a>".add2TagAttr("a", "href", "http:/www.google.com"))
+*/
