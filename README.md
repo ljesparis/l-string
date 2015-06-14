@@ -308,7 +308,7 @@ SOFTWARE.
 
 Version 1.0.28.
 ---------------
-	- new function added add2TagAttr.
+	- new function added it, add2TagAttr.
 	- new variable declaration style, added it. 
 	- new examples added. 
 
