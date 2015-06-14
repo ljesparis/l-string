@@ -59,7 +59,8 @@ var string = require("../l-string"),
 	smartAddTag = string.smartAddTag,
 	add2TagClassName = string.add2TagClassName,
 	add2TagIdName = string.add2TagIdName,
-	add2TagStyle = string.add2TagStyle;
+	add2TagStyle = string.add2TagStyle,
+	add2TagAttr = string.add2TagAttr;
 ```
 first way to use this module
 ----------------------------
@@ -269,6 +270,14 @@ console.log(c.add2TagClassName("p", "something2"))
 
 console.log("<img>leo".add2TagClassName("img1", ["asd", "asdad", "qwe"]))
 console.log("<img>leo".add2TagClassName("img1", ["asd"]))
+
+var a = "<p>leonardo</p>".add2TagAttr("p", "data-city", "city")
+var b = a.add2TagAttr("p", "data-city2", "")
+var c = b.add2TagClassName("p", "javier")
+var d = c.add2TagIdName("p1", "esparis")
+var e = d.add2TagIdName("p1", "meza")
+var d = e.add2TagAttr("p", "data-city2")
+console.log(d.add2TagAttr("p", "data-city3"))
 ```
 
 LICENSE.
@@ -296,5 +305,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+Version 1.0.28.
+---------------
+	- new function added add2TagAttr.
+	- new variable declaration style, added it. 
+	- new examples added. 
+
 Version 1.0.27.
 ---------------
+	- issues in method insert fixed.
+	- new README.md style added.
