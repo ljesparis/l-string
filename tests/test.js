@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-//here are some usefull test
- 
+ //here are some usefull test
+
 var string = require("../l-string"),
 	multiply = string.multiply,
 	isUpper = string.isUpper,
@@ -488,17 +488,11 @@ var a = "<p>leo</p>".add2TagClassName("p1", "leonardo")
 var b = a.add2TagClassName("p1", "javier")
 var c = b.add2TagClassName("p1", "esparis")
 console.log(c.add2TagClassName("p", "meza"))
-
+*/
 console.log("<img>leo".add2TagClassName("1img", ["asd", "asdad", "qwe"]))
 console.log("<img>leo".add2TagClassName("img1", ["asd"]))
 
-var a = "<p>leo</p>".add2TagClassName("p", "leonardo")
-var b = a.add2TagStyle("p", [ ['margin', ['10dp',0,'10dp', 0] ], ['color','red'] ])
-var c = b.add2TagClassName("p", "javier")
-var d = c.add2TagIdName("p1", "esparis")
-var e = d.add2TagIdName("p1", "meza")
-console.log(e.add2TagStyle("p", [['margin', '0 0 0 0']]).add2TagClassName("p", "veronica"))
-
+/*
 console.log("<p>leonardo</p>".add2TagIdName("p1", "leonardo").add2TagIdName("p1", "esparis"))
 
 var a = "<p>leonardo</p>".add2TagAttr("p", "data-city", "city")
@@ -508,6 +502,49 @@ var d = c.add2TagIdName("p1", "esparis")
 var e = d.add2TagIdName("p1", "meza")
 var d = e.add2TagAttr("p", "data-city2")
 console.log(d.add2TagAttr("p", "data-city3"))
+*/
+//console.log("<a>leo</a>".add2TagAttr("a", "href", "http:/www.google.com"))
 
-console.log("<a>leo</a>".add2TagAttr("a", "href", "http:/www.google.com"))
+/*
+
+var a = "<h1>leo</h1><h1>leo</h1>".add2TagClassName("h1", "leonardo")
+var b = a.add2TagStyle("h1", [
+	['margin', ['10dp', 0, '10dp', 0]],
+	['color', 'red']
+])
+var c = b.add2TagClassName("h1", "javier")
+var d = c.add2TagIdName("h1", "esparis")
+var e = d.add2TagIdName("h1", "meza")
+console.log(e.add2TagStyle("3h1", [
+	['margin', '0 0 0 0']
+]).add2TagClassName("h1", "veronica").add2TagAttr("h1", "hidden", ""))
+
+
+var a = "<p><p><p>leonardo</p></p></p>".add2TagAttr("p", "data-city", "city")
+var b = a.add2TagAttr("p2", "data-city2", "")
+var c = b.add2TagClassName("p", "javier")
+var d = c.add2TagIdName("p1", "esparis")
+var e = d.add2TagIdName("p", "meza")
+var d = e.add2TagAttr("p", "data-city2")
+console.log(d.add2TagAttr("p3", "data-city3", "algo"))
+
+var a = "<p>leonardo</p><p>pepe</p><p>vero</p>".add2TagAttr("p", "data-city", "city")
+var b = a.add2TagAttr("p2", "data-city2", "")
+var c = b.add2TagClassName("p", "javier")
+var d = c.add2TagIdName("p1", "esparis")
+var e = d.add2TagIdName("p", "meza")
+var d = e.add2TagAttr("p", "data-city2")
+console.log(d.add2TagAttr("p3", "data-city3", "algo"))
+
+var a = "<div>leo</div>".add2TagClassName("div", "leonardo")
+var b = a.add2TagStyle("div", [
+	['margin', ['10dp', 0, '10dp', 0]],
+	['color', 'red']
+])
+var c = b.add2TagClassName("div", "javier")
+var d = c.add2TagIdName("div1", "esparis")
+var e = d.add2TagIdName("div1", "meza")
+console.log(e.add2TagStyle("div", [
+	['margin', '0 0 0 0']
+]).add2TagClassName("div", "veronica"))
 */

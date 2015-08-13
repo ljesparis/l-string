@@ -306,6 +306,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
+Version 1.0.29.
+---------------
+	- add2Tag update it.
+	- new documentation style add it to all functions.
+	- new examples added. 
+
 Version 1.0.28.
 ---------------
 	- new function added it, add2TagAttr.
