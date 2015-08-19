@@ -1,0 +1,41 @@
+{
+  "name": "l-string",
+  "main": [
+    "./l-string.js",
+  ],
+  "version": "1.0.29",
+  "homepage": "https://github.com/leoxnidas/l-string",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leoxnidas/l-string.git"
+  },
+  "authors": [
+    "Leonardo Esparis <leo.leo.leoxnidas.c.14@gmail.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/leoxnidas/l-string/issues"
+  },
+  "description": "this is a module that you can use to manipulate strings ...",
+  "keywords": [
+    "l-string",
+    "l-string.js",
+    "string",
+    "s",
+    "S",
+    "String",
+    "lReplace",
+    "rReplace",
+    "lSplit",
+    "rSplit"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "bower.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
