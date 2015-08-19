@@ -1,8 +1,6 @@
 {
   "name": "l-string",
-  "main": [
-    "./l-string.js",
-  ],
+  "main": "./l-string.js",
   "version": "1.0.29",
   "homepage": "https://github.com/leoxnidas/l-string",
   "repository": {
