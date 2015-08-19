@@ -29,5 +29,17 @@
   "scripts": {
     "test-legacy": "node ./tests/test.js"
   },
+  "keywords": [
+    "l-string",
+    "l-string.js",
+    "string",
+    "s",
+    "S",
+    "String",
+    "lReplace",
+    "rReplace",
+    "lSplit",
+    "rSplit"
+  ],
   "license": "MIT"
 }
