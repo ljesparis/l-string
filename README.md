@@ -1,16 +1,12 @@
-**l-string** :boom: :boom: :boom:
+:boom: :boom: :boom:
+
+**l-string**   :thumbsup:
 ============
 
+:boom: :boom: :boom:
 
-##Contributors
--------------
 
-```
-	Leonardo Javier Esparis Meza ==> leo.leo.leoxnidas.c.14@gmail.com
-```
 
-if you want more examples, go to tests folder.
-----------------------------------------------
 
 Install
 -------
@@ -62,7 +58,7 @@ LICENSE.
 
 (The MIT License)
 
-Copyright (C) 2015  Leonardo Esparis <@leo.leo.leoxnidas.c.14@gmail.com>.
+Copyright (C) 2015  Leonardo Esparis <leo.leo.leoxnidas.c.14@gmail.com>.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -112,3 +108,11 @@ Version 1.0.27.
 ---------------
 	- issues in method insert fixed.
 	- new README.md style added.
+
+
+##Contributors
+-------------
+
+```
+	Leonardo Javier Esparis Meza ==> leo.leo.leoxnidas.c.14@gmail.com
+```
