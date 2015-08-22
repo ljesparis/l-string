@@ -62,7 +62,7 @@ LICENSE.
 
 (The MIT License)
 
-Copyright (C) 2015 Leonardo Esparis.
+Copyright (C) 2015  Leonardo Esparis <@leo.leo.leoxnidas.c.14@gmail.com>.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
