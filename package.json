@@ -1,6 +1,6 @@
 {
   "name": "l-string",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "this is a module that you can use to manipulate strings ... ",
   "main": "./l-string.js",
   "directories": {
@@ -39,7 +39,12 @@
     "lReplace",
     "rReplace",
     "lSplit",
-    "rSplit"
+    "rSplit",
+    "split",
+    "replace"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.19.0"
+  }
 }

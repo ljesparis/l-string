@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Holaaaaaa</title>
+	<script src="../../l-string.web.js"></script>
+</head>
+<style>
+	.leonardo {
+		color: red;
+	}
+
+</style>
+<body>
+
+	
+	<p id="hi">Leonardo --</p>
+
+
+	<script>
+		require("l-string.web");
+		
+		// methods supported
+		var e = document.getElementById('hi').innerHTML;
+		
+		console.log(e.center(100))
+		console.log(e.lJust(50))
+		console.log(e.rJust(67));
+		document.getElementById('hi').innerHTML = e.remove("eo");
+		document.getElementById('hi').innerHTML = e.insert("e", 6);
+		alert("l".multiply(10));
+		document.getElementById('hi').innerHTML = e.toCharArray();
+		document.getElementById('hi').innerHTML = "###".join(e);
+		document.getElementById('hi').innerHTML = e.rReplace("o", "nick", 1);
+		document.getElementById('hi').innerHTML = e.lConCat("lalalala");
+		document.getElementById('hi').innerHTML = e.rConCat("asdsdaasd");
+		document.getElementById('hi').innerHTML = e.trimPrefix("o");
+		document.getElementById('hi').innerHTML = e.trim();
+		document.getElementById('hi').innerHTML = e.swapCase();
+		document.getElementById('hi').innerHTML = e.endsWith("o");
+		document.getElementById('hi').innerHTML = e.lReplace("eo", "WERTYUIO");
+		document.getElementById('hi').innerHTML = e.slugify();
+		document.getElementById('hi').innerHTML = e.isLower();
+		document.getElementById('hi').innerHTML = e.startsWith("l");
+		document.getElementById('hi').innerHTML = e.rSplit("o", 1);
+		document.getElementById('hi').innerHTML = e.title();
+		document.getElementById('hi').innerHTML = e.lSplit("o", 1);
+		document.getElementById('hi').innerHTML = e.dummyCount("o");
+		document.getElementById('hi').innerHTML = e.reverse();
+		document.getElementById('hi').innerHTML = e.getCharPosition("e");
+		document.getElementById('hi').innerHTML = e.rSlice(2, 6);
+		document.getElementById('hi').innerHTML = e.multiply(5);
+		document.getElementById('hi').innerHTML = e.isEmpty();
+		document.getElementById('hi').innerHTML = e.isSpace();
+		document.getElementById('hi').innerHTML = e.isSubString("eo");
+		document.getElementById('hi').innerHTML = e.isAlphanumeric();
+		document.getElementById('hi').innerHTML = e.isDigit();
+		document.getElementById('hi').innerHTML = e.isAlpha();
+		document.getElementById('hi').innerHTML = e.isUpper();
+
+
+		/*
+
+		Not supported.
+
+		console.log("<h1>\"\'<>&leonardo</h1>".escape())
+		console.log("<h1>leo</h1>".removeTag())
+		var a = '<html><head></head><body><h1 class="pepe"></h1><h1 class="juan"></h1><h1 class="andrea"></h1></body></html>'
+		var b = a.addAttr2Tag("h13", "data-city", "algo")
+		var c = b.addStyle2Tag("h12", [['margin', '0 0 0 0'], ['color', 'red']])
+		var d = c.addClassName2Tag("h11", "leonardo")
+		console.log(d.addIdName2Tag("h12", "pepe").addAttr2Tag("h13", "data-city2", "algo2").addIdName2Tag("h12", "pep22e"))
+		*/
+
+	</script>
+	<script src="./index.js"></script>
+</body>
+</html>

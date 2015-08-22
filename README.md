@@ -2,16 +2,20 @@
 ============
 
 
+With this library you can extend, javascript's String object, 
+both server side and client side.
+
+
 Install
 -------
 ```npm install l-string or npm install --save l-string ```
 
-Usage.
-------
+Usage, Server Side.
+------------------
 
 ```javascript
 
-var string = require("l-string");
+require("l-string");
 
 
 var a = "<p>leonardo</p>".addStyle2Tag("p1", [ ['color','red'], 
@@ -47,6 +51,26 @@ var d = e.addAttr2Tag("p", "data-city2")
 console.log(d.addAttr2Tag("p", "data-city3"))
 ```
 
+
+Usage, client Side.
+------------------
+```html
+<script src="../../l-string.web.js"></script> // add this tag to the html file.
+```
+
+Then, in your js file, write code...
+
+```javascript
+(function(){
+	require("l-string.web");
+
+	alert("leo".multiply(10));
+
+})();
+```
+:trollface: :trollface: :trollface:
+
+
 LICENSE.
 --------
 
@@ -75,6 +99,8 @@ SOFTWARE.
 
 Version 1.0.30.
 ---------------
+	- new l-string module ==> l-string.web.js, run onthe browser.
+	- dummyAddTag and smartAddTag deleted.
 	- now, there's only one way to use l-string.
 	- new dependencies cheerio
 	- new function trimPrefix
