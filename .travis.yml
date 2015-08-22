@@ -7,9 +7,3 @@ node_js:
   - "0.6"
 
 sudo: false
-
-before_install:
-	- npm install -g npm
-
-install:
-	- npm install
