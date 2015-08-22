@@ -1,11 +1,5 @@
-:boom: :boom: :boom:
-
-**l-string**   :thumbsup:
+**l-string**   :thumbsup: :trollface:
 ============
-
-:boom: :boom: :boom:
-
-
 
 
 Install
