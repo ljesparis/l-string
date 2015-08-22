@@ -1,4 +1,4 @@
-**l-string**   :thumbsup: :trollface:
+**l-string**   :thumbsup: :trollface: (passed)[https://travis-ci.org/leoxnidas/l-string.svg]
 ============
 
 
