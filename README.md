@@ -1,11 +1,11 @@
-#**l-string** :boom: :boom: :boom:
+:boom: :boom: :boom: >**l-string** :boom: :boom: :boom:
 
 
-#Contributors
+##Contributors
 -------------
 
 ```
-	Leonardo Javier Esparis Meza ==> @leo.leo.leoxnidas.c.14@gmail.com
+	Leonardo Javier Esparis Meza ==> leo.leo.leoxnidas.c.14@gmail.com
 ```
 
 if you want more examples, go to tests folder.
