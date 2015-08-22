@@ -1,159 +1,65 @@
-**Created By Leonardo Esparis**
-=================================
-**I am an engineering's student**
------------------------------------
+:boom: :boom: **l-string** :boom: :boom: :boom:
+              ============
 
-if you use this module, report bugs
------------------------------------
-it's a good practice for me...
---------------------------------
 
-if you want to more examples, go to tests folder.
--------------------------------------------------
+#Contributors
+-------------
+
+```
+	Leonardo Javier Esparis Meza ==> @leo.leo.leoxnidas.c.14@gmail.com
+```
+
+if you want more examples, go to tests folder.
+----------------------------------------------
 
 Install
 -------
 ```npm install l-string or npm install --save l-string ```
 
-Examples:
----------
+Usage.
+------
 
-```
-var string = require("../l-string"),
-	multiply = string.multiply,
-	isUpper = string.isUpper,
-	isLower = string.isLower,
-	isAlpha = string.isAlpha,
-	isDigit = string.isDigit,
-	isAlphanumeric = string.isAlphanumeric,
-	isEmpty = string.isEmpty,
-	isSpace = string.isSpace,
-	rSlice = string.rSlice,
-	dummyCount = string.dummyCount,
-	capitalize = string.capitalize,
-	getCharPosition = string.getCharPosition,
-	reverse = string.reverse,
-	title = string.title,
-	lSplit = string.lSplit,
-	rSplit = string.rSplit,
-	isSubString = string.isSubString,
-	startsWith = string.startsWith,
-	endsWith = string.endsWith,
-	swapCase = string.swapCase,
-	trim = string.trim,
-	rConCat = string.rConCat,
-	lConCat = string.lConCat,
-	lReplace = string.lReplace,
-	rReplace = string.rReplace,
-	join = string.join,
-	center = string.center,
-	lJust = string.lJust,
-	rJust = string.rJust,
-	escape = string.escape,
-	slugify = string.slugify,
-	dummyAddTag = string.dummyAddTag,
-	removeTag = string.removeTag,
-	remove = string.remove,
-	insert = string.insert,
-	toCharArray = string.toCharArray,
-	smartAddTag = string.smartAddTag,
-	add2TagClassName = string.add2TagClassName,
-	add2TagIdName = string.add2TagIdName,
-	add2TagStyle = string.add2TagStyle,
-	add2TagAttr = string.add2TagAttr,
-  	isNullOrUndefined = string.isNullOrUndefined,
-  	isNumber = string.isNumber,
-  	isArray = string.isArray,
- 	isString = string.isString;
-```
-first way to use this module
-----------------------------
-```
-console.log(string.dummyRemoveTag("<h1>leonardo</h1>"));        // leonardo 
-console.log(string.delete("leonardo", "o"))    // lenard 
-console.log(string.insert("leonardo", "o", 5)) // leonaordo
-console.log(string.toCharArray("leonardo javier esparis meza {'name':'leonardo'}"))
-// [ 'l', 'e', 'o', 'n', 'a', 'r', 'd', 'o', ' ', 'j', 'a', 'v','i', 'e', 'r', ' ', 'e', 's', 'p', 'a', 'r', 'i', 's', ' ', 'm', 'e', 'z', 'a', ' ', '{', '\'', 'n', 'a', 'm', 'e', '\'', ':', '\'', 'l', 'e', 'o', 'n', 'a', 'r', 'd', 'o', '\'', '}' ]
-console.log(string.smartAddTag("leonardo", ["div", "div", "p"])) // <div><div><p>leonardo</p></div></div>
-console.log(string.add2TagClassName(
-	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div")) // <!DOCTYPE html><html><div class='a'><div><div><div><img>leonardo</div></div></div></div></html>
-console.log(string.add2TagIdName(
-	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div")) // <!DOCTYPE html><html><div id='a'><div><div><div><img>leonardo</div></div></div></div></html>
-console.log(string.add2TagStyle(
-	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "4div", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))// <!DOCTYPE html><html><div><div><div><div style='margin: 10dp 0 10dp 0; colof:red; '><img>leonardo</div></div></div></div></html>
-console.log(string.add2TagStyle(
-	string.smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "div4", [['margin',['10dp',0,'10dp', 0]], ['color','red']]))// <!DOCTYPE html><html><div><div><div><div style='margin: 10dp 0 10dp 0; colof:red; '><img>leonardo</div></div></div></div></html>
-```
+```javascript
 
-second way to use this module.
-------------------------------
+var string = require("l-string");
 
-```
-console.log(escape("<>\'\""));                            // &lt;&amp;&quot;&#39;
-console.log(slugify("leonardo esparis")); // l-e-o-n-a-r-d-o-e-s-p-a-r-i-s
-console.log(dummyAddTag("leonardo esparis", "html")); // <html>leonardo esparis</html>
-console.log(delete("leonardo", "onar")) // ledo
-console.log(insert("leonardo", "o", 0)) // oleonardo
-console.log(insert("leonardo", "o", 1)) // loeonardo 
-console.log(toCharArray("leonardo javier esparis meza {'name':'leonardo'}"))
-// [ 'l', 'e', 'o', 'n', 'a', 'r', 'd', 'o', ' ', 'j', 'a', 'v','i', 'e', 'r', ' ', 'e', 's', 'p', 'a', 'r', 'i', 's', ' ', 'm', 'e', 'z', 'a', ' ', '{', '\'', 'n', 'a', 'm', 'e', '\'', ':', '\'', 'l', 'e', 'o', 'n', 'a', 'r', 'd', 'o', '\'', '}' ]
-console.log(smartAddTag("leonardo", ["body", "header", "p"])) // <body><header><p>leonardo</p></header></body>
-console.log(add2TagClassName(
-	smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div1")) // <!DOCTYPE html><html><div class='a'><div><div><div><img>leonardo</div></div></div></div></html>
-console.log(add2TagClassName("<img>leo", "image", "img")) // <img class='image'>leo
-console.log(add2TagClassName("<img>leo", "image", "img1")) // <img class='image'>leo
-console.log(add2TagIdName("<img>leo", "image", "img")) // <img id='image'>leo
-console.log(add2TagIdName("<img>leo", "image", "img1")) // <img id='image'>leo 
-console.log(add2TagIdName(
-	smartAddTag("leonardo", ["DOCTYPE","html", "div", "div", "div", "div", "img"])
-	, "a", "div1")) // <!DOCTYPE html><html><div id='a'><div><div><div><img>leonardo</div></div></div></div></html>
-```
 
-thirth way to use this module.
-------------------------------
-
-```
-var a = "<p>leonardo</p>".add2TagStyle("p1", [ ['color','red'], 
+var a = "<p>leonardo</p>".addStyle2Tag("p1", [ ['color','red'], 
 											   ['background', 'red'], 
 											   ['margin', 
 											    ["10dp", "0", "10dp", "0"]]])
 
-var b = a.add2TagStyle('p', ['right', '0']).add2TagStyle('p1', ['left', '0'])
-var c = b.add2TagStyle('p1', ['text-align', 'center']).add2TagStyle('p1', ['padding', [0,0,0,0]])
-var d = c.add2TagStyle('p1',[['padding',['10dp',0,'10dp', 0]], ['color','red']]
+var b = a.addStyle2Tag('p', ['right', '0']).addStyle2Tag('p1', ['left', '0'])
+var c = b.addStyle2Tag('p1', ['text-align', 'center']).addStyle2Tag('p1', ['padding', [0,0,0,0]])
+var d = c.addStyle2Tag('p1',[['padding',['10dp',0,'10dp', 0]], ['color','red']]
 console.log(d)
 
 var a = "leonardo".smartAddTag(['a', 'a', 'a', 'a', 'a']);
-var data = a.add2TagStyle("a", [['margin',['10dp',0,'10dp', 0]], ['color','red']])
-var data2 = data.add2TagStyle("a", [['right',0], ['background','red']])
-console.log(data2.add2TagStyle("a", [['padding',['10dp',0,'10dp', 0]], ['color','red']]))
+var data = a.addStyle2Tag("a", [['margin',['10dp',0,'10dp', 0]], ['color','red']])
+var data2 = data.addStyle2Tag("a", [['right',0], ['background','red']])
+console.log(data2.addStyle2Tag("a", [['padding',['10dp',0,'10dp', 0]], ['color','red']]))
 
-var a = "leonardo".smartAddTag(['div ', 'div', 'div', 'div', 'div']).add2TagIdName("div", "something")
-var b = a.add2TagClassName("div1", "something2")
-console.log(b.add2TagStyle("div", [ ['margin', ['10dp',0,'10dp', 0] ], ['color','red'] ]))
+var a = "leonardo".smartAddTag(['div ', 'div', 'div', 'div', 'div']).addIdName2Tag("div", "something")
+var b = a.addClassName2Tag("div1", "something2")
+console.log(b.addStyle2Tag("div", [ ['margin', ['10dp',0,'10dp', 0] ], ['color','red'] ]))
 
-var a = "<p>leo</p>".add2TagClassName("p1", "asd")
-var b = a.add2TagClassName("p1", "asdad")
-var c = b.add2TagClassName("p1", "qwe")
-console.log(c.add2TagClassName("p", "something2"))
+var a = "<p>leo</p>".addClassName2Tag("p1", "asd")
+var b = a.addClassName2Tag("p1", "asdad")
+var c = b.addClassName2Tag("p1", "qwe")
+console.log(c.addClassName2Tag("p", "something2"))
 
-var a = "<p>leonardo</p>".add2TagAttr("p", "data-city", "city")
-var b = a.add2TagAttr("p", "data-city2", "")
-var c = b.add2TagClassName("p", "javier")
-var d = c.add2TagIdName("p1", "esparis")
-var e = d.add2TagIdName("p1", "meza")
-var d = e.add2TagAttr("p", "data-city2")
-console.log(d.add2TagAttr("p", "data-city3"))
+var a = "<p>leonardo</p>".addAttr2Tag("p", "data-city", "city")
+var b = a.addAttr2Tag("p", "data-city2", "")
+var c = b.addClassName2Tag("p", "javier")
+var d = c.addIdName2Tag("p1", "esparis")
+var e = d.addIdName2Tag("p1", "meza")
+var d = e.addAttr2Tag("p", "data-city2")
+console.log(d.addAttr2Tag("p", "data-city3"))
 ```
 
 LICENSE.
 --------
-```
+
 (The MIT License)
 
 Copyright (C) 2015 Leonardo Esparis.
@@ -175,7 +81,20 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
+
+
+Version 1.0.30.
+---------------
+	- now, there's only one way to use l-string.
+	- new dependencies cheerio
+	- new function trimPrefix
+	- old name add2TagClassName, new name addClassName2Tag (renamed)
+	- old name add2TagIdName, new name addIdName2Tag (renamed)
+	- old name add2TagStyle, new name addStyle2Tag (renamed)
+	- old name add2TagAttr, new name addAttr2Tag (renamed)
+	- new private function added.
+	- escape update it.
+	- new documentation style add it to all functions.
 
 Version 1.0.29.
 ---------------
@@ -185,7 +104,7 @@ Version 1.0.29.
 
 Version 1.0.28.
 ---------------
-	- new function added it, add2TagAttr.
+	- new function added it, addAttr2Tag.
 	- new variable declaration style, added it. 
 	- new examples added. 
 
