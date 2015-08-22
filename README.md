@@ -1,4 +1,5 @@
-:boom: :boom: :boom: >**l-string** :boom: :boom: :boom:
+**l-string** :boom: :boom: :boom:
+============
 
 
 ##Contributors
