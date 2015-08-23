@@ -3,7 +3,7 @@
 
 require('../lib/extendStringProperty')();
 
-
+/*
 console.log("leo".isUpper())
 console.log("leo".isLower())
 console.log("leo".isAlpha())
@@ -52,3 +52,15 @@ var b = a.addAttr2Tag("h13", "data-city", "algo")
 var c = b.addStyle2Tag("h12", [['margin', '0 0 0 0'], ['color', 'red']])
 var d = c.addClassName2Tag("h11", "leonardo")
 console.log(d.addIdName2Tag("h12", "pepe").addAttr2Tag("h13", "data-city2", "algo2").addIdName2Tag("h12", "pep22e"))
+*/
+
+'use strict';
+var cheerio = require('cheerio');
+
+var $ = cheerio.load('<h1 class="something">...</h1>');
+
+$('.something').addClass('classvalue');
+
+console.log($.html());
+console.log(cheerio.version);
+console.log(process.version);

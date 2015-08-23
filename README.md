@@ -18,29 +18,13 @@ Usage, Server Side.
 require("l-string");
 
 
-var a = "<p>leonardo</p>".addStyle2Tag("p1", [ ['color','red'], 
-											   ['background', 'red'], 
-											   ['margin', 
-											    ["10dp", "0", "10dp", "0"]]])
-
-var b = a.addStyle2Tag('p', ['right', '0']).addStyle2Tag('p1', ['left', '0'])
-var c = b.addStyle2Tag('p1', ['text-align', 'center']).addStyle2Tag('p1', ['padding', [0,0,0,0]])
-var d = c.addStyle2Tag('p1',[['padding',['10dp',0,'10dp', 0]], ['color','red']]
-console.log(d)
-
-var a = "leonardo".smartAddTag(['a', 'a', 'a', 'a', 'a']);
-var data = a.addStyle2Tag("a", [['margin',['10dp',0,'10dp', 0]], ['color','red']])
-var data2 = data.addStyle2Tag("a", [['right',0], ['background','red']])
-console.log(data2.addStyle2Tag("a", [['padding',['10dp',0,'10dp', 0]], ['color','red']]))
-
-var a = "leonardo".smartAddTag(['div ', 'div', 'div', 'div', 'div']).addIdName2Tag("div", "something")
-var b = a.addClassName2Tag("div1", "something2")
-console.log(b.addStyle2Tag("div", [ ['margin', ['10dp',0,'10dp', 0] ], ['color','red'] ]))
-
-var a = "<p>leo</p>".addClassName2Tag("p1", "asd")
-var b = a.addClassName2Tag("p1", "asdad")
-var c = b.addClassName2Tag("p1", "qwe")
-console.log(c.addClassName2Tag("p", "something2"))
+console.log("<h1>\"\'<>&leonardo</h1>".escape())
+console.log("<h1>leo</h1>".removeTag())
+var a = '<html><head></head><body><h1 class="pepe"></h1><h1 class="juan"></h1><h1 class="andrea"></h1></body></html>'
+var b = a.addAttr2Tag("h13", "data-city", "algo")
+var c = b.addStyle2Tag("h12", [['margin', '0 0 0 0'], ['color', 'red']])
+var d = c.addClassName2Tag("h11", "leonardo")
+console.log(d.addIdName2Tag("h12", "pepe").addAttr2Tag("h13", "data-city2", "algo2").addIdName2Tag("h12", "pep22e"))
 
 var a = "<p>leonardo</p>".addAttr2Tag("p", "data-city", "city")
 var b = a.addAttr2Tag("p", "data-city2", "")
@@ -49,6 +33,20 @@ var d = c.addIdName2Tag("p1", "esparis")
 var e = d.addIdName2Tag("p1", "meza")
 var d = e.addAttr2Tag("p", "data-city2")
 console.log(d.addAttr2Tag("p", "data-city3"))
+
+
+console.log("leo   ".rReplace("eo", "1231"))
+console.log("leo   ".join("-"))
+console.log("leo   ".toCharArray())
+console.log("leo   ".insert("eo", 2))
+console.log("leo   ".remove("eo"))
+console.log("leo   ".center(2, "-"))
+console.log("leo   ".lJust(2, "-"))
+console.log("leo   ".rJust(2, "-"))
+console.log("leo".slugify())
+
+
+
 ```
 
 
