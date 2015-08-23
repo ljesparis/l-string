@@ -56,7 +56,9 @@ Usage, client Side.
 ------------------
 
 if you dont have browserify installed, copy this ==> ```npm install -g browserify```
+then, write this ```browserify -r l-string:l-string.web > l-string.web.js```
 
+then... 
 
 ```html
 <script src="./l-string.web.js"></script> // add this tag to the html file.
