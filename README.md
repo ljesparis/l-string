@@ -2,9 +2,10 @@
 ============
 
 
-####**With this library you can extend, javascript's String object,** 
-####**both server side and client side.**
-
+**With this library you can extend, javascript's String object,**
+----------------------------------------------------------------- 
+**both server side and client side.**
+-------------------------------------
 
 Install
 -------
