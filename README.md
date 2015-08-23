@@ -2,10 +2,9 @@
 ============
 
 
-**With this library you can extend, javascript's String object,**
------------------------------------------------------------------ 
+**With this library you can extend, javascript's string object,** 
 **both server side and client side.**
--------------------------------------
+
 
 Install
 -------
@@ -75,6 +74,16 @@ Then, in your js file, write code...
 
 })();
 ```
+
+functions that l-string.web does not support.
+---------------------------------------------
+- [X] escape
+- [X] removeTag
+- [X] addAttr2Tag
+- [X] addStyle2Tag
+- [X] addClassName2Tag
+- [X] addIdName2Tag
+
 :trollface: :trollface: :trollface:
 
 
@@ -103,6 +112,32 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+
+Version 1.0.35.
+---------------
+	- more keywords added.
+	- error at method addIdName2Tag and addAttr2Tag fixed.
+	- README.md style fixed.
+
+Version 1.0.34.
+---------------
+	- error at method addStyle2Tag fixed.
+	- README.md style fixed
+
+Version 1.0.33.
+---------------
+	- error at method add2TagClassName fixed.
+	- README.md style fixed.
+
+Version 1.0.32.
+---------------
+	- new html example added.
+	- README.md style fixed.
+
+Version 1.0.31.
+---------------
+	- README.md style fixed.
+	- html support.
 
 Version 1.0.30.
 ---------------
