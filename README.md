@@ -54,8 +54,12 @@ console.log(d.addAttr2Tag("p", "data-city3"))
 
 Usage, client Side.
 ------------------
+
+if you dont have browserify installed, copy this ==> ```npm install -g browserify```
+
+
 ```html
-<script src="../../l-string.web.js"></script> // add this tag to the html file.
+<script src="./l-string.web.js"></script> // add this tag to the html file.
 ```
 
 Then, in your js file, write code...
@@ -130,7 +134,7 @@ Version 1.0.27.
 	- new README.md style added.
 
 
-##Contributors
+Contributors
 -------------
 
 ```
