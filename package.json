@@ -46,7 +46,7 @@
     "insert",
     "count",
     "html-string-object"
-    "dom",
+    "dom"
   ],
   "license": "MIT",
   "dependencies": {
