@@ -1,6 +1,6 @@
 {
   "name": "l-string",
-  "version": "1.0.35",
+  "version": "1.0.36",
   "description": "this is a module that you can use to manipulate strings ... ",
   "main": "./l-string.js",
   "directories": {
@@ -43,8 +43,10 @@
     "split",
     "replace",
     "html-string",
+    "insert",
     "count",
     "html-string-object"
+    "dom",
   ],
   "license": "MIT",
   "dependencies": {
