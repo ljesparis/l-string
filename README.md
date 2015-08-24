@@ -44,16 +44,15 @@ console.log("leo   ".center(2, "-"))
 console.log("leo   ".lJust(2, "-"))
 console.log("leo   ".rJust(2, "-"))
 console.log("leo".slugify())
-
-
-
 ```
 
 
 Usage, client Side.
 ------------------
 
-if you dont have browserify installed, copy this ==> ```npm install -g browserify```
+if you dont have browserify installed, and you are using linux, 
+copy this at the command shell ==> ```./node_modules/l-string/bin/make-l-string.web```,
+otherwise, copy this ==> ```sudo npm install -g browserify```
 then, write this ```browserify -r l-string:l-string.web > l-string.web.js```
 
 then... 
@@ -73,6 +72,9 @@ Then, in your js file, write code...
 })();
 ```
 
+:trollface: :trollface: :trollface:
+
+
 functions that l-string.web does not support.
 ---------------------------------------------
 - [X] escape
@@ -81,8 +83,6 @@ functions that l-string.web does not support.
 - [X] addStyle2Tag
 - [X] addClassName2Tag
 - [X] addIdName2Tag
-
-:trollface: :trollface: :trollface:
 
 
 LICENSE.
@@ -109,6 +109,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+Version 1.0.36.
+---------------
+	- bin file added, make-l-string.web.
+	- README.md style fixed.
 
 
 Version 1.0.35.
