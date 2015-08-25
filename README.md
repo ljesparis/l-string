@@ -111,6 +111,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+Version 1.0.38.
+---------------
+	- lReplace error fixed.
+
+
+Version 1.0.37.
+---------------
+	- dummycount error fixed.
+
+
 Version 1.0.36.
 ---------------
 	- bin file added, make-l-string.web.
