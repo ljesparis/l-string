@@ -1,10 +1,11 @@
 {
   "name": "l-string",
-  "version": "1.0.36",
+  "version": "1.0.38",
   "description": "this is a module that you can use to manipulate strings ... ",
   "main": "./l-string.js",
   "directories": {
-    "test": "tests"
+    "test": "tests",
+    "bin" : "bin"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -21,6 +22,7 @@
     "email": "leo.leo.leoxnidas.c.14@gmail.com"
   },
   "files": [
+    "bin/",
     "lib/",
     "README.md",
     "tests/",
