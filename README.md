@@ -1,11 +1,10 @@
 **l-string**   :thumbsup: :trollface: [![Build Status](https://travis-ci.org/leoxnidas/l-string.svg)](https://travis-ci.org/leoxnidas/l-string)
 ============
 
-<script src="paypal-button.min.js?merchant=7XZKUQF7MKDWQ"
-    data-button="donate"
-    data-name="l-string"
-    data-amount="1.00"
-    async
+<script 
+    data-env="sandbox" 
+    data-name="l-string" 
+    data-button="donate" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=leo.leo.leoxnidas.c.14@gmail.com" async="async"
 ></script>
 
 
