@@ -110,6 +110,10 @@ SOFTWARE.
 
 Version 1.0.39.
 ---------------
+	- donate botton added.
+
+Version 1.0.39.
+---------------
 	- New project description.
 	
 
