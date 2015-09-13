@@ -3,7 +3,7 @@ language: node_js
 script: make travis-test
 
 node_js:
-  - "4.0"
+  - 4.0.0
   - "0.12"
   - "0.11"
   - "0.10"
