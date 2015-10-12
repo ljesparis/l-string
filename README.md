@@ -108,6 +108,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+Version 1.0.41.
+---------------
+	- new function added smartCount.
+	- new function isSubString changed.
+	- new file added, utils.js.
+	- old name _parse_tag, new name _parse_char (renamed), private function.
+	- addstyle2tag improved the function.
+
 Version 1.0.40.
 ---------------
 	- donate botton added.
