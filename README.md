@@ -111,6 +111,7 @@ SOFTWARE.
 Version 1.0.42.
 ---------------
 	- fixed issues in smartCount function.
+	- new private function added, called _find_letter_position
 
 Version 1.0.41.
 ---------------
