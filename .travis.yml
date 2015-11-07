@@ -5,5 +5,4 @@ node_js:
   - "0.12"
   - "0.11"
   - "0.10"
-sudo: true
 script: node tests/test.js
