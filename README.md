@@ -108,6 +108,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+Version 1.0.42.
+---------------
+	- fixed issues in smartCount function.
+
 Version 1.0.41.
 ---------------
 	- new function added smartCount.
