@@ -1,5 +1,7 @@
-**l-string**   :thumbsup: :trollface: [![Build Status](https://travis-ci.org/leoxnidas/l-string.svg)](https://travis-ci.org/leoxnidas/l-string) [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BQKLKSBKH4DPE) [![NPM](https://nodei.co/npm/l-string.png)](https://nodei.co/npm/l-string/) [![NPM](https://nodei.co/npm-dl/l-string.png)](https://nodei.co/npm/l-string/)
+**l-string**   :thumbsup: :trollface: [![Build Status](https://travis-ci.org/leoxnidas/l-string.svg)](https://travis-ci.org/leoxnidas/l-string) [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BQKLKSBKH4DPE)
 ============
+
+[![NPM](https://nodei.co/npm/l-string.png)](https://nodei.co/npm/l-string/) [![NPM](https://nodei.co/npm-dl/l-string.png)](https://nodei.co/npm/l-string/)
 
 **This library was specially created to extend the javascript's string object. Both, server side and client side.**
 
