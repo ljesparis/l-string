@@ -16,6 +16,7 @@ Usage, Server Side.
 require("l-string");
 
 
+console.log("a".ord())
 console.log("<h1>\"\'<>&leonardo</h1>".escape())
 console.log("<h1>leo</h1>".removeTag())
 var a = '<html><head></head><body><h1 class="pepe"></h1><h1 class="juan"></h1><h1 class="andrea"></h1></body></html>'
@@ -107,6 +108,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Version 1.0.43.
+---------------
+	- new function added, ord.
+	- new file added, ASCII.
+	- fixed issues in getCharPosition function
 
 Version 1.0.42.
 ---------------
