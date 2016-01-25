@@ -3,7 +3,7 @@
 
 require('../l-string');
 
-
+/*
 console.log("leo".isUpper())
 console.log("leo".isLower())
 console.log("leo".isAlpha())
@@ -17,6 +17,7 @@ console.log("leo".multiply(2))
 console.log("leo".rSlice(2, 4))
 console.log("leo".dummyCount("e"))
 console.log("0".ord())
+console.log("36".chr())
 console.log("leo".capitalize())
 console.log("leo".getCharPosition("e"))
 console.log("leo".reverse())
@@ -52,4 +53,5 @@ var b = a.addAttr2Tag("h13", "data-city", "algo")
 var c = b.addStyle2Tag("h12", [['margin', '0 0 0 0'], ['color', 'red']])
 var d = c.addClassName2Tag("h11", "leonardo")
 console.log(d.addIdName2Tag("h12", "pepe").addAttr2Tag("h13", "data-city2", "algo2").addIdName2Tag("h12", "pep22e"))
+*/
 
