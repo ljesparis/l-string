@@ -1,6 +1,6 @@
 {
   "name": "l-string",
-  "version": "1.0.44", 
+  "version": "1.0.45", 
   "description": "this is a module that you can use to manipulate strings ... ",
   "main": "./l-string.js",
   "directories": {
@@ -8,7 +8,7 @@
     "bin" : "bin"
   },
   "engines": {
-    "node": ">=0.4"
+    "node": ">=0.11"
   },
   "bugs": {
     "url": "https://github.com/leoxnidas/l-string/issues"
@@ -38,6 +38,7 @@
     "s",
     "S",
     "String",
+    "ASCII",
     "lReplace",
     "rReplace",
     "lSplit",
