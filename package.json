@@ -8,7 +8,7 @@
     "bin": "bin"
   },
   "engines": {
-    "node": ">=0.11"
+    "node": ">=0.12"
   },
   "bugs": {
     "url": "https://github.com/leoxnidas/l-string/issues"
