@@ -109,6 +109,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+Version 1.0.46.
+---------------
+	- updating .travis.yml.
+	- updating  cheerio dependencies.
+	- updating  examples.
+
 Version 1.0.45.
 ---------------
 	- extending the ASCII table.
