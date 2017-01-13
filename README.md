@@ -3,7 +3,6 @@
 
 **This library was specially created to extend the javascript's string object. Both, server side and client side.**
 
-
 Install
 -------
 ```npm install l-string or npm install --save l-string ```
@@ -12,9 +11,7 @@ Usage, Server Side.
 ------------------
 
 ```javascript
-
 require("l-string");
-
 
 console.log("a".ord())
 console.log("<h1>\"\'<>&leonardo</h1>".escape())
@@ -44,7 +41,6 @@ console.log("leo   ".lJust(2, "-"))
 console.log("leo   ".rJust(2, "-"))
 console.log("leo".slugify())
 ```
-
 
 Usage, client Side.
 ------------------
@@ -108,6 +104,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Version 1.0.47.
+---------------
+	- test.js file updated.
+	- ord function now shall Returns string's ASCII value  of every element
+	- changin ASCII.js to _ASCII.js filename
 
 Version 1.0.46.
 ---------------
