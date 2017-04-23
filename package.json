@@ -1,11 +1,10 @@
 {
   "name": "l-string",
-  "version": "1.0.47",
+  "version": "1.0.48",
   "description": "this is a module that you can use to manipulate strings ... ",
   "main": "./l-string.js",
   "directories": {
-    "test": "tests",
-    "bin": "bin"
+    "test": "tests"
   },
   "engines": {
     "node": ">=0.12"
@@ -22,14 +21,16 @@
     "email": "leo.leo.leoxnidas.c.14@gmail.com"
   },
   "files": [
-    "bin/",
-    "lib/",
+    "lib/*",
     "README.md",
-    "tests/",
-    "l-string.js"
+    "AUTHORS.md",
+    "CONTRIBUTORS.md",
+    "LICENSE",
+    "tests/*",
+    "./l-string.js"
   ],
   "scripts": {
-    "test-legacy": "node ./tests/test.js"
+    "test": "node ./tests/test.js && node ./tests/read_html_file/index.js"
   },
   "keywords": [
     "l-string",
@@ -37,6 +38,10 @@
     "string",
     "s",
     "S",
+    "html",
+    "css",
+    "id",
+    "html helper",
     "String",
     "ASCII",
     "lReplace",
@@ -53,6 +58,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^0.20.0"
+    "cheerio": "^0.22.0"
   }
 }
