@@ -1,5 +1,6 @@
 Version 1.0.48.
 ---------------
+	- added .gitignore file.
 	- AUTHORS.md file added.
 	- CONTRIBUTORS.md file added.
 	- updated example, read_html_file.
