@@ -1,5 +1,6 @@
 Version 1.0.48.
 ---------------
+	- added .npmignore file.
 	- added .gitignore file.
 	- AUTHORS.md file added.
 	- CONTRIBUTORS.md file added.
@@ -7,6 +8,7 @@ Version 1.0.48.
 	- updated cheerio to version 0.22.0.
 	- added test for nodejs 7 to travis file.
 	- added yarn support and added yarn.lock file.
+	- deleted node_modules directory from repository.
 	- web client side not supported anymore and bin directory deleted.
 	- updated README.md file, adding new way to install l-string pacakge with yarn.
 	- added new keywords, updated cheerio to version 0.22.0, updated l-string to 1.48.0.
