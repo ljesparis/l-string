@@ -1,7 +1,7 @@
 #!/usr/bin/env node
  //here are some usefull test
 
-require('../l-string');
+require('../l-string')(true);
 
 
 console.log("leo".isUpper())
