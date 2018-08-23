@@ -1,6 +1,6 @@
 {
   "name": "l-string",
-  "version": "1.0.48",
+  "version": "2.0.0",
   "description": "this is a module that you can use to manipulate strings ... ",
   "main": "./l-string.js",
   "directories": {
@@ -18,7 +18,7 @@
   },
   "author": {
     "name": "Leonardo Javier Esparis Meza",
-    "email": "leo.leo.leoxnidas.c.14@gmail.com"
+    "email": "ljesparis@gmail.com"
   },
   "files": [
     "lib/*",
@@ -38,10 +38,6 @@
     "string",
     "s",
     "S",
-    "html",
-    "css",
-    "id",
-    "html helper",
     "String",
     "ASCII",
     "lReplace",
@@ -50,14 +46,8 @@
     "rSplit",
     "split",
     "replace",
-    "html-string",
     "insert",
     "count",
-    "html-string-object",
-    "dom"
   ],
-  "license": "MIT",
-  "dependencies": {
-    "cheerio": "^0.22.0"
-  }
+  "license": "MIT"
 }

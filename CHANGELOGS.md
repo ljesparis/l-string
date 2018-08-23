@@ -1,3 +1,8 @@
+Version 2.0.0.
+--------------
+* html support deleted
+
+
 Version 1.0.48.
 ---------------
 * added .npmignore file.
