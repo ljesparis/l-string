@@ -28,6 +28,6 @@ node_js:
   - "0.12.0"
 
 before_script:
-  - npm install
+  - npm i -g yarn && yarn
 script:
   - npm test
