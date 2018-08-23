@@ -30,7 +30,7 @@
     "./l-string.js"
   ],
   "scripts": {
-    "test": "node ./tests/test.js && node ./tests/read_html_file/index.js"
+    "test": "node ./tests/test_callback.js && node ./tests/test_extendStringProperty.js"
   },
   "keywords": [
     "l-string",
