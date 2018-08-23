@@ -1,6 +1,12 @@
 Version 2.0.0.
 --------------
 * html support deleted
+* extend string property is now optional
+* lstring now support callback style pattern 
+* fix lReplace and rReplace bug
+* tests added
+* LICENSE year updated
+* .gitignore and .npmignore updated
 
 
 Version 1.0.48.
@@ -24,7 +30,8 @@ Version 1.0.47.
 ---------------
 * test.js file updated.
 * ord function now shall Returns string's ASCII value  of every element
-* changin ASCII.js to _ASCII.js filename
+* changin ASCII.js to _ASCII.js filename.
+
 
 Version 1.0.46.
 ---------------
@@ -50,6 +57,7 @@ Version 1.0.42.
 ---------------
 * fixed issues in smartCount function.
 * new private function added, called _find_letter_position
+
 
 Version 1.0.41.
 ---------------
