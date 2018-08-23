@@ -1,2 +1,4 @@
 .git
 npm-debug.log
+tests/
+node_modules/
