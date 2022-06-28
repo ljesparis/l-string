@@ -1,4 +1,4 @@
-**l-string**  [![Build Status](https://travis-ci.org/ljesparis/l-string.svg?branch=master)](https://travis-ci.org/ljesparis/l-string) [![npm](https://img.shields.io/npm/dy/localeval.svg)](https://github.com/leoxnidas/l-string)
+**l-string**  [![Build Status](https://travis-ci.org/ljesparis/l-string.svg?branch=master)](https://travis-ci.org/ljesparis/l-string) [![npm](https://img.shields.io/npm/dy/localeval.svg)](https://github.com/ljesparis/l-string)
 ============
 **This library was specially created to extend the javascript's string object.**
 
